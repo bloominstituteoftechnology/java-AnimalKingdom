@@ -1,6 +1,6 @@
 package com.harrisonbrock;
 
-import java.util.ArrayList;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -20,6 +20,11 @@ public class Main {
         list.add(new Bird("Peacock", 1821));
         list.add(new Bird("Toucan", 1758));
         list.add(new Bird("Swan", 1758));
+
+        list.add(new Fish("Salmon", 1758));
+        list.add(new Fish("Catfish", 1821));
+        list.add(new Fish("Perch", 1758));
+
 
         for (AnimalImpl animal : list) {
             animal.breath();

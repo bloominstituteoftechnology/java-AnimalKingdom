@@ -1,6 +1,6 @@
 package com.harrisonbrock;
 
-public class Mammal extends AnimalImpl implements Animal {
+public class Mammal extends AnimalImpl {
 
     public Mammal(String name, int yearDiscovered) {
         super(name, yearDiscovered);

@@ -1,23 +1,24 @@
 package com.harrisonbrock;
 
-public class Bird extends AnimalImpl{
+public class Fish extends AnimalImpl{
 
-    public Bird(String name, int yearDiscovered) {
+    public Fish(String name, int yearDiscovered) {
         super(name, yearDiscovered);
     }
+
     @Override
     public String move() {
-        return null;
+        return "fish swim";
     }
 
     @Override
     public String breath() {
-        return "bird lungs";
+        return "fish gills";
     }
 
     @Override
     public String reproduce() {
-        return "bird eggs";
+        return "fish eggs";
     }
 
     @Override
