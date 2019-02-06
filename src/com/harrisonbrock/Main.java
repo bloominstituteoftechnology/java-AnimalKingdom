@@ -3,6 +3,7 @@ package com.harrisonbrock;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -45,5 +46,9 @@ public class Main {
         list.sort((a1, a2) -> a1.move().compareToIgnoreCase(a2.move()));
         list.forEach(name -> System.out.println(name.getName() + " | " + name.move()));
 
+        System.out.println("=====================================================================================================");
+//        List only those animals the breath with lungs
+        List<AnimalImpl> newList = list.stream().filter( a -> a.breath() == "lungs").collect(Collectors.toList());
+        newList.forEach(name -> System.out.println(name.getName() + " | " + name.breath()));
     }
 }
