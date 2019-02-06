@@ -4,36 +4,19 @@ import javax.print.DocFlavor;
 
 public abstract class AbstractAnimal
 {
-    private int uniqueId = 0;
+    int uniqueId;
     String name;
     int yearDiscovered;
 
     public AbstractAnimal( String name, int yearDiscovered)
     {
-        uniqueId++;
         this.name = name;
         this.yearDiscovered = yearDiscovered;
     }
-
-    public void move()
+    public AbstractAnimal()
     {
-        System.out.println("moving");
-    }
-    public void breath()
-    {
-        System.out.println("breathing");
+        uniqueId = 0;
     }
 
-    public void reproduce()
-    {
-        System.out.println("reproducing");
-    }
-
-
-
-    public void consumeFood()
-    {
-        System.out.println("Consuming food");
-    }
 
 }
