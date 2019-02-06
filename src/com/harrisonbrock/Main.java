@@ -26,11 +26,13 @@ public class Main {
         list.add(new Fish("Perch", 1758));
 
 
-        for (AnimalImpl animal : list) {
-            animal.breath();
-            System.out.println("id: " +  animal.getId() + " | " + animal.getName() + " | " + animal.getYearDiscovered() + " | " + animal.breath());
-
-        }
-
+//        for (AnimalImpl animal : list) {
+//            animal.breath();
+//            System.out.println("id: " +  animal.getId() + " | " + animal.getName() + " | " + animal.getYearDiscovered() + " | " + animal.breath());
+//
+//        }
+//        List all the animals in descending order by year named
+        list.sort((a1, a2) -> a2.getName().compareToIgnoreCase(a1.getName()));
+        list.forEach(name -> System.out.println(name.getName()));
     }
 }

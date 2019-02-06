@@ -14,7 +14,7 @@ public class Mammal extends AnimalImpl {
 
     @Override
     public String breath() {
-        return "mammal lungs";
+        return "lungs";
     }
 
     @Override

@@ -8,17 +8,17 @@ public class Fish extends AnimalImpl{
 
     @Override
     public String move() {
-        return "fish swim";
+        return "swim";
     }
 
     @Override
     public String breath() {
-        return "fish gills";
+        return "gills";
     }
 
     @Override
     public String reproduce() {
-        return "fish eggs";
+        return "eggs";
     }
 
     @Override
