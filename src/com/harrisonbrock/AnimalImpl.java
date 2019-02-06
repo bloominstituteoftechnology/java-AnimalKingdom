@@ -1,10 +1,10 @@
 package com.harrisonbrock;
 
-public abstract class AnimalImpl  {
+public abstract class AnimalImpl implements Animal {
     static int maxId = 0;
-    int id;
-    String name;
-    int yearDiscovered;
+    private int id;
+    private String name;
+    private int yearDiscovered;
 
     public AnimalImpl(String name, int yearDiscovered) {
         maxId++;
@@ -31,5 +31,25 @@ public abstract class AnimalImpl  {
 
     public void setYearDiscovered(int yearDiscovered) {
         this.yearDiscovered = yearDiscovered;
+    }
+
+    @Override
+    public String move() {
+        return null;
+    }
+
+    @Override
+    public String breath() {
+        return null;
+    }
+
+    @Override
+    public String reproduce() {
+        return null;
+    }
+
+    @Override
+    public double eat(double amount) {
+        return 0;
     }
 }

@@ -2,7 +2,9 @@ package com.harrisonbrock;
 
 public interface Animal {
 
-    void move();
-    void breath();
-    void reproduce();
+    String move();
+    String breath();
+    String reproduce();
+   double eat(double amount);
+    int getId();
 }
