@@ -34,5 +34,16 @@ public class Main {
 //        List all the animals in descending order by year named
         list.sort((a1, a2) -> a2.getName().compareToIgnoreCase(a1.getName()));
         list.forEach(name -> System.out.println(name.getName()));
+
+        System.out.println("================================================================================================");
+//        List all the animals alphabetically
+
+        list.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+        list.forEach(name -> System.out.println(name.getName()));
+        System.out.println("=================================================================================================");
+//        List all the animals order by how they move
+        list.sort((a1, a2) -> a1.move().compareToIgnoreCase(a2.move()));
+        list.forEach(name -> System.out.println(name.getName() + " | " + name.move()));
+
     }
 }
