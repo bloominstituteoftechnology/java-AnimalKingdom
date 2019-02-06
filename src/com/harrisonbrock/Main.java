@@ -61,5 +61,11 @@ public class Main {
         newList = list.stream().filter( a -> a.breath() == "lungs" && a.reproduce() == "eggs").collect(Collectors.toList());
         newList.forEach(name -> System.out.println(name.getName() + " | " + name.breath() + " | " + name.reproduce()));
 
+        System.out.println("===============================================================================================");
+//        List alphabetically only those animals that were named in 1758
+        newList = list.stream().filter( a -> a.getYearDiscovered() == 1758).collect(Collectors.toList());
+        newList.sort((a1, a2) -> a1.move().compareToIgnoreCase(a2.move()));
+        newList.forEach(name -> System.out.println(name.getName()));
+
     }
 }
