@@ -50,5 +50,11 @@ public class Main {
 //        List only those animals the breath with lungs
         List<AnimalImpl> newList = list.stream().filter( a -> a.breath() == "lungs").collect(Collectors.toList());
         newList.forEach(name -> System.out.println(name.getName() + " | " + name.breath()));
+
+        System.out.println("======================================================================================================");
+//        List only those animals that breath with lungs and were named in 1758
+        newList = list.stream().filter( a -> a.breath() == "lungs" && a.getYearDiscovered() == 1758).collect(Collectors.toList());
+        newList.forEach(name -> System.out.println(name.getName() + " | " + name.breath() + " | " + name.getYearDiscovered()));
+
     }
 }
