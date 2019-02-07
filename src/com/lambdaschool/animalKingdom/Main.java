@@ -14,6 +14,16 @@ public class Main {
         Mammals Raccoon = new Mammals("Raccoon", 1758);
         Mammals BigFoot = new Mammals("BigFoot", 2021);
 
-        System.out.println("Panda: + " + Panda);
+        ArrayList<AbstractAnimal> AnimalList = new ArrayList<>();
+        AnimalList.add(Panda);
+        AnimalList.add(Zebra);
+        AnimalList.add(Koala);
+        AnimalList.add(Sloth);
+        AnimalList.add(Armadillo);
+        AnimalList.add(Raccoon);
+        AnimalList.add(BigFoot);
+
+        AnimalList.forEach(v -> System.out.println(v));
+
     }
 }

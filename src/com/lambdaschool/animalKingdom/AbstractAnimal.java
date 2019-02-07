@@ -2,31 +2,24 @@ package com.lambdaschool.animalKingdom;
 
 import javax.print.DocFlavor;
 
-public abstract class AbstractAnimal
+public abstract class AbstractAnimal implements Animal
 {
+    // static so it stays the same for all
+    static int maxId = 0;
     int uniqueId;
-    String name;
-    int yearDiscovered;
-    int food;
+    String food = "EATING FOOOD";
 
-    public AbstractAnimal(String name, int yearDiscovered)
-    {
-        this.name = name;
-        this.yearDiscovered = yearDiscovered;
-    }
     public AbstractAnimal()
     {
-        uniqueId = 0;
-        food = 1;
+       this.uniqueId = maxId++;
     }
 
-    public abstract String getName();
-    public abstract String getBreath();
-    public abstract String getReproduce();
-    public abstract String getConsumeFood();
 
-    public void consumeFood()
+    public abstract String getName();
+    public abstract int getYear();
+    public abstract int getId();
+    public String food()
     {
-        System.out.printf("EATS");
+        return food;
     }
 }

@@ -2,37 +2,48 @@ package com.lambdaschool.animalKingdom;
 
 public class Mammals extends AbstractAnimal
 {
-    public String name;
-    public int yearsDiscovered;
-    public  Mammals(String name, int yearsDiscovered)
+    String name;
+    int yearsDiscovered;
+    public Mammals(String name, int yearDiscovered)
     {
-        this.name = name;
-        this.yearsDiscovered = yearsDiscovered;
+       this.name = name;
+       this.yearsDiscovered = yearDiscovered;
     }
-
 
     @Override
     public String getName()
     {
-        return null;
+        return name;
     }
 
     @Override
-    public String getBreath()
+    public int getYear()
     {
-        return null;
+        return yearsDiscovered;
     }
 
     @Override
-    public String getReproduce()
+    public int getId()
     {
-        return null;
+        return uniqueId;
     }
 
     @Override
-    public String getConsumeFood()
+    public String move()
     {
-        return null;
+        return "walk";
+    }
+
+    @Override
+    public String breath()
+    {
+        return "lung";
+    }
+
+    @Override
+    public String reproduce()
+    {
+        return "births";
     }
 
     @Override
@@ -41,6 +52,8 @@ public class Mammals extends AbstractAnimal
         return "Mammals{" +
                 "name='" + name + '\'' +
                 ", yearsDiscovered=" + yearsDiscovered +
+                ", uniqueId=" + uniqueId +
+                ", food='" + food + '\'' +
                 '}';
     }
 }
