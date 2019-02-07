@@ -53,8 +53,6 @@ public class Fish extends AbstractAnimal
         return "Fish{" +
                 "name='" + name + '\'' +
                 ", yearsDiscovered=" + yearsDiscovered +
-                ", uniqueId=" + uniqueId +
-                ", food='" + food + '\'' +
                 '}';
     }
 }

@@ -53,8 +53,6 @@ public class Birds extends  AbstractAnimal
         return "Birds{" +
                 "name='" + name + '\'' +
                 ", yearsDiscovered=" + yearsDiscovered +
-                ", uniqueId=" + uniqueId +
-                ", food='" + food + '\'' +
                 '}';
     }
 }

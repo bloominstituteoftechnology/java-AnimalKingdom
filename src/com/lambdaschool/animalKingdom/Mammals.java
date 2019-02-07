@@ -52,8 +52,6 @@ public class Mammals extends AbstractAnimal
         return "Mammals{" +
                 "name='" + name + '\'' +
                 ", yearsDiscovered=" + yearsDiscovered +
-                ", uniqueId=" + uniqueId +
-                ", food='" + food + '\'' +
                 '}';
     }
 }

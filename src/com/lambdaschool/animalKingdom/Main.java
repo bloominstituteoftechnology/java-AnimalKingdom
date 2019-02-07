@@ -44,5 +44,9 @@ public class Main {
         AnimalList.sort((o1,o2) -> o1.getYear() - o2.getYear());
         System.out.println(AnimalList.toString());
 
+
+        System.out.println("ANIMALS ALPHABETICAL ORDER:\n");
+        AnimalList.sort((o1,o2) -> o1.getName().compareToIgnoreCase(o2.getName()));
+        System.out.println(AnimalList);
     }
 }
