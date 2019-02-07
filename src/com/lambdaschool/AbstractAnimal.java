@@ -22,9 +22,19 @@ public abstract class AbstractAnimal
         return name;
     }
 
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
     public int getYearNamed()
     {
         return yearNamed;
+    }
+
+    public void setYearNamed(int yearNamed)
+    {
+        this.yearNamed = yearNamed;
     }
 
     public int getId()
