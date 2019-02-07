@@ -16,6 +16,6 @@ public abstract class AbstractAnimals {
     public abstract int getYear();
 
     public String toString() {
-        return "Name: " + name + "Year Name: " + year;
+        return "Name: " + name + " Year Name: " + year;
     }
 }
