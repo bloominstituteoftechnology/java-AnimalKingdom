@@ -1,11 +1,11 @@
 package com.lambdaschool.animalKingdom;
 
-public class Birds extends  AbstractAnimal
+public class Fish extends AbstractAnimal
 {
     String name;
     int yearsDiscovered;
 
-    public Birds(String name, int yearsDiscovered)
+    public Fish(String name, int yearsDiscovered)
     {
         this.name = name;
         this.yearsDiscovered = yearsDiscovered;
@@ -32,25 +32,25 @@ public class Birds extends  AbstractAnimal
     @Override
     public String move()
     {
-        return "fly";
+        return "swim";
     }
 
     @Override
     public String breath()
     {
-        return "lung";
+        return "gills";
     }
 
     @Override
     public String reproduce()
     {
-        return null;
+        return "eggs";
     }
 
     @Override
     public String toString()
     {
-        return "Birds{" +
+        return "Fish{" +
                 "name='" + name + '\'' +
                 ", yearsDiscovered=" + yearsDiscovered +
                 ", uniqueId=" + uniqueId +
