@@ -19,13 +19,13 @@ public class Bird extends AbstractAnimal implements AllAnimals
     @Override
     public String breathe()
     {
-        return "Birds have lungs"
+        return "Birds have lungs";
     }
 
     @Override
     public String reproduce()
     {
-        return "Birds lay eggs"
+        return "Birds lay eggs";
     }
 
     @Override

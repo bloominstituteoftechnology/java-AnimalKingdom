@@ -1,6 +1,6 @@
 package com.lambdaschool;
 
-public abstract class AbstractAnimal
+public abstract class AbstractAnimal implements AllAnimals
 {
     static int maxId = 0;
     int id;

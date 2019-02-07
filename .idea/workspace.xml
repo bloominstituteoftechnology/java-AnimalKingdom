@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44f4af2e-27d6-4cd5-84a5-8d6500b1f175" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lambdaschool/AbstractAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lambdaschool/AbstractAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lambdaschool/AllAnimals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lambdaschool/AllAnimals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lambdaschool/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lambdaschool/Bird.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lambdaschool/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lambdaschool/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,20 +17,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.5804907">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/lambdaschool/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="250">
-                  <caret line="10" selection-start-line="10" selection-end-line="10" />
+                <state relative-caret-position="334">
+                  <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/lambdaschool/AbstractAnimal.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="504">
-                  <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+                <state relative-caret-position="63">
+                  <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
                 </state>
               </provider>
             </entry>
@@ -38,8 +38,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/lambdaschool/Bird.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="10" selection-start-line="10" selection-end-line="10" />
+                <state relative-caret-position="368">
+                  <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -60,9 +60,9 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="-250">
-                    <caret line="7" column="150" selection-start-line="7" selection-start-column="150" selection-end-line="7" selection-end-column="150" />
+                <state split_layout="FIRST">
+                  <first_editor relative-caret-position="-18">
+                    <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="56" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -90,16 +90,16 @@
         <option value="$PROJECT_DIR$/src/com/lambdaschool/Animal.java" />
         <option value="$PROJECT_DIR$/src/com/lambdaschool/abstractAnimal.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/com/lambdaschool/Main.java" />
         <option value="$PROJECT_DIR$/src/com/lambdaschool/AllAnimals.java" />
-        <option value="$PROJECT_DIR$/src/com/lambdaschool/Bird.java" />
         <option value="$PROJECT_DIR$/src/com/lambdaschool/AbstractAnimal.java" />
+        <option value="$PROJECT_DIR$/src/com/lambdaschool/Bird.java" />
+        <option value="$PROJECT_DIR$/src/com/lambdaschool/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1913" />
-    <option name="width" value="1135" />
+    <option name="width" value="1268" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -139,7 +139,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549507829564" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549509370700" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -180,15 +180,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549493799192</updated>
-      <workItem from="1549493802707" duration="10839000" />
+      <workItem from="1549493802707" duration="12379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10839000" />
+    <option name="totallyTimeSpent" value="12379000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1913" y="0" width="1135" height="1047" extended-state="0" />
+    <frame x="1913" y="0" width="1268" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -196,17 +196,17 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19069767" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08443709" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32932165" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.33260393" />
+      <window_info anchor="bottom" id="Terminal" weight="0.33260393" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32932165" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -226,20 +226,20 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-250">
-            <caret line="7" column="150" selection-start-line="7" selection-start-column="150" selection-end-line="7" selection-end-column="150" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/com/lambdaschool/AbstractAnimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lambdaschool/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-18">
+            <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="56" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -252,15 +252,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lambdaschool/Bird.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="368">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lambdaschool/AbstractAnimal.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lambdaschool/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+        <state relative-caret-position="334">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
