@@ -17,6 +17,7 @@ public class Fish extends AbstractAnimal
         return name;
     }
 
+
     @Override
     public int getYear()
     {
@@ -47,12 +48,5 @@ public class Fish extends AbstractAnimal
         return "eggs";
     }
 
-    @Override
-    public String toString()
-    {
-        return "Fish{" +
-                "name='" + name + '\'' +
-                ", yearsDiscovered=" + yearsDiscovered +
-                '}';
-    }
+
 }
