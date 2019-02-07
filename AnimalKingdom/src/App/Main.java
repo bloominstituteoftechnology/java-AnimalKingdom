@@ -75,7 +75,7 @@ public class Main
         animals.sort(Comparator.comparing(Animals::getYear).reversed());
         animals.forEach(animal -> System.out.println(animal.getName() + " | " + animal.getYear()));
         System.out.println("******************");
-        System.out.println("Sorting alphabetically");
+        System.out.println("Sorting alphabetically");en
         animals.sort(Comparator.comparing(Animals::getName));
         animals.forEach(a -> System.out.println(a.getName()));
         System.out.println("******************");
