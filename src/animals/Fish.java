@@ -7,17 +7,17 @@ public class Fish extends AbstractAnimals {
 
     @Override
     public String move() {
-        return this.name + "swims toward his destination";
+        return "swim";
     }
 
     @Override
     public String breath() {
-        return this.name + "uses gills to breathe";
+        return "gills";
     }
 
     @Override
     public String reproduce() {
-        return this.name + "lays eggs";
+        return "eggs";
     }
 
     @Override

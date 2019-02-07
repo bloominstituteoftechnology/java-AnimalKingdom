@@ -7,17 +7,17 @@ public class Birds extends AbstractAnimals{
 
     @Override
     public String move() {
-        return this.name + "flies toward his destination";
+        return "fly";
     }
 
     @Override
     public String breath() {
-        return this.name + "uses lungs to breathe";
+        return "lungs";
     }
 
     @Override
     public String reproduce() {
-        return this.name + "lays eggs";
+        return "eggs";
     }
 
     @Override
