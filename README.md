@@ -5,6 +5,8 @@ A student that completes this project shows that they can:
 * implement and use abstract classes in Java
 * implement and use Lambda Expressions in Java
 
+Hint: implement is for interfaces and extends is for classes. If all of your methods can be abstract and you have no fields needed, use an interface. If you need some fields at the top level or wish to have all children share a common method, use an abstract class.
+
 # Introduction
 
 # Instruction
