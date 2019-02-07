@@ -5,7 +5,8 @@ package com.lambdaschool;
 
 public interface AllAnimals
 {
-    void move();
-    void breathe();
-    void reproduce();
+    String move();
+    String breathe();
+    String reproduce();
+    String eat();
 }

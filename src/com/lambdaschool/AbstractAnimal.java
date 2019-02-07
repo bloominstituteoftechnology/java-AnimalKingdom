@@ -41,4 +41,30 @@ public abstract class AbstractAnimal
     {
         return id;
     }
+
+    // Animals can move, breathe, reproduce
+    // Overrides------------------------------
+    @Override
+    public String move()
+    {
+        return null;
+    }
+
+    @Override
+    public String breathe()
+    {
+        return null;
+    }
+
+    @Override
+    public String reproduce()
+    {
+        return null;
+    }
+
+    @Override
+    public String eat()
+    {
+        return "Yum Yum!";
+    }
 }
