@@ -21,7 +21,7 @@ A student that completes this project shows that they can:
     * Birds move - fly, breath - lungs, reproduce - eggs
     * Fish move - swim, breath - gills, reproduce - eggs
 
-- [ ] Create a collection for the animals using the following data
+- [x] Create a collection for the animals using the following data
     * Mammals:
         * Name: Panda      Year Named: 1869
         * Name: Zebra      Year Named: 1778
