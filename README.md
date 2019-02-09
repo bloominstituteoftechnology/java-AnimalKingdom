@@ -9,7 +9,7 @@ A student that completes this project shows that they can:
 
 # Instruction
 
-- [ ] Create an abstract class for animals
+- [x] Create an abstract class for animals
     * All animals consume food the same way
     * Each animal is assigned a unique number, a name, and year discovered regardless of classification.
 
