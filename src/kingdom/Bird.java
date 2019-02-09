@@ -7,16 +7,16 @@ public class Bird extends Animal {
 
   @Override
   public String move() {
-    return does("flies");
+    return "flies";
   }
 
   @Override
-  public String breath() {
-    return does("breathes with its lungs");
+  public String breathe() {
+    return "lungs";
   }
 
   @Override
   public String reproduce() {
-    return does("produces eggs");
+    return "eggs";
   }
 }

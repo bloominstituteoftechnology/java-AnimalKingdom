@@ -12,15 +12,25 @@ public abstract class Animal {
     yearDiscovered = year;
   }
 
-  public String does(String action) {
-    return name + " " + action + "!";
-  }
-
   public abstract String move();
-  public abstract String breath();
+  public abstract String breathe();
   public abstract String reproduce();
 
-  public String eatFood(String food) {
-    return name + " eats " + food + ".";
+  public String consume() {
+    return "mouth";
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getYearNamed() {
+    return yearDiscovered;
+  }
+
+  @Override
+  public String toString() {
+    return "Animal: " + name + "\n" +
+          "Year Discovered: " + yearDiscovered + "\n";
   }
 }

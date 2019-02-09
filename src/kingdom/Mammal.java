@@ -7,16 +7,16 @@ public class Mammal extends Animal {
 
   @Override
   public String move() {
-    return does("walks");
+    return "walks";
   }
 
   @Override
-  public String breath() {
-    return does("breathes with its lungs");
+  public String breathe() {
+    return "lungs";
   }
 
   @Override
   public String reproduce() {
-    return does("live births its child(ren)");
+    return "live births";
   }
 }

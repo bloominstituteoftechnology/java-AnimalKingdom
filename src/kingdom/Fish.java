@@ -7,16 +7,16 @@ public class Fish extends Animal {
 
   @Override
   public String move() {
-    return does("swims");
+    return "swims";
   }
 
   @Override
-  public String breath() {
-    return does("breathes with its gills");
+  public String breathe() {
+    return "gills";
   }
 
   @Override
   public String reproduce() {
-    return does("produces eggs");
+    return "eggs";
   }
 }

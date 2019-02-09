@@ -43,7 +43,7 @@ A student that completes this project shows that they can:
         * Name: Catfish Year Named: 1817
         * Name: Perch   Year Named: 1758
 
-- [ ] Using Lambda Expressions
+- [x] Using Lambda Expressions
 
     * List all the animals in descending order by year named
     * List all the animals alphabetically
