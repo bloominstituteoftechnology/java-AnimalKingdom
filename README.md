@@ -16,7 +16,7 @@ A student that completes this project shows that they can:
     * The methods will return a string saying how that animal implements the action
     * Animals can move, breath, reproduce
  
-- [ ] Create classes for mammals, birds, fish
+- [x] Create classes for mammals, birds, fish
     * Mammals move - walk, breath - lungs, reproduce - live births
     * Birds move - fly, breath - lungs, reproduce - eggs
     * Fish move - swim, breath - gills, reproduce - eggs

@@ -12,6 +12,10 @@ public abstract class Animal {
     yearDiscovered = year;
   }
 
+  public String does(String action) {
+    return name + " " + action + "!";
+  }
+
   public abstract String move();
   public abstract String breath();
   public abstract String reproduce();
