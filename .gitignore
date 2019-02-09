@@ -1,3 +1,6 @@
 # ignore compiled class files and jars
 src/*/*.class
 src/*.jar
+
+# ignore .idea dir, I didn't use IntelliJ IDEA this time around (besides for a little bit of syntax help)
+.idea/
