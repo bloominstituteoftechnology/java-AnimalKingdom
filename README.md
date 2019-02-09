@@ -9,19 +9,19 @@ A student that completes this project shows that they can:
 
 # Instruction
 
-* Create an abstract class for animals
+- [ ] Create an abstract class for animals
     * All animals consume food the same way
     * Each animal is assigned a unique number, a name, and year discovered regardless of classification.
 
     * The methods will return a string saying how that animal implements the action
     * Animals can move, breath, reproduce
  
-* Create classes for mammals, birds, fish
+- [ ] Create classes for mammals, birds, fish
     * Mammals move - walk, breath - lungs, reproduce - live births
     * Birds move - fly, breath - lungs, reproduce - eggs
     * Fish move - swim, breath - gills, reproduce - eggs
 
-* Create a collection for the animals using the following data
+- [ ] Create a collection for the animals using the following data
     * Mammals:
         * Name: Panda      Year Named: 1869
         * Name: Zebra      Year Named: 1778
@@ -43,7 +43,7 @@ A student that completes this project shows that they can:
         * Name: Catfish Year Named: 1817
         * Name: Perch   Year Named: 1758
 
-* Using Lambda Expressions
+- [ ] Using Lambda Expressions
 
     * List all the animals in descending order by year named
     * List all the animals alphabetically
