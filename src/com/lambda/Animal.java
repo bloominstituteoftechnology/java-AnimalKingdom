@@ -17,6 +17,10 @@ public abstract class Animal {
         return name;
     }
 
+    public int getYearDiscovered() {
+        return yearDiscovered;
+    }
+
     public String consume() {
         return "Consumes";
     }
