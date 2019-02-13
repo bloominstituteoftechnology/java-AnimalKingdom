@@ -32,5 +32,11 @@ public class Main {
         System.out.println("\n*** List all the animals in descending order by year named ***");
         myAnimals.sort((a1, a2) -> a2.getYearDiscovered() - a1.getYearDiscovered());
         myAnimals.forEach(animal -> System.out.println("Animal: " + animal.getName() + " Year Discovered: " + animal.getYearDiscovered()));
+
+        System.out.println("\n*** List animals alphabetically ***");
+        myAnimals.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+        myAnimals.forEach(animal -> System.out.println(animal.getName()));
+
+
     }
 }
