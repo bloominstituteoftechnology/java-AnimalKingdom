@@ -21,4 +21,12 @@ public abstract class Animal {
         this.name = name;
         this.yearDiscovered = yearDiscovered;
     }
+
+    public int getYearDiscovered(){
+        return yearDiscovered;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
