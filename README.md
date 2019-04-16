@@ -7,19 +7,23 @@ A student that completes this project shows that they can:
 
 # Introduction
 
+Using a combination of interfaces, abstract classes, and lambda expressions, students will create and manipulate a list of animals using object oriented design principles.
+
 # Instruction
 
 * Create an abstract class for animals
     * All animals consume food the same way
     * Each animal is assigned a unique number, a name, and year discovered regardless of classification.
 
-    * The methods will return a string saying how that animal implements the action
-    * Animals can move, breath, reproduce
+    * Methods will return a string saying how that animal implements the action
+    * All animals can move, breath, reproduce. How they do that, so what string should get returned when the method is executed, varies by animal type.
  
 * Create classes for mammals, birds, fish
     * Mammals move - walk, breath - lungs, reproduce - live births
     * Birds move - fly, breath - lungs, reproduce - eggs
     * Fish move - swim, breath - gills, reproduce - eggs
+
+Hint: think about abstract classes and creating an arraylist using an abstract class type.
 
 * Create a collection for the animals using the following data
     * Mammals:
@@ -52,3 +56,7 @@ A student that completes this project shows that they can:
     * List only those animals that breath with lungs and were named in 1758
     * List only those animals that lay eggs and breath with lungs
     * List alphabetically only those animals that were named in 1758 
+    
+* Stretch Goal
+    * For the list of animals, list alphabetically those animals that are mammals.
+
