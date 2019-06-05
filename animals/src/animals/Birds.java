@@ -2,6 +2,10 @@ package animals;
 
 public class Birds extends AbstractAnimal
 {
+    public Bird(String name, int yearDiscovered)
+    {
+        super(name, yearDiscovered);
+    }
     @Override
     public String move()
     {
