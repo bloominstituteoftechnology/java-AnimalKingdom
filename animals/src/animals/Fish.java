@@ -7,7 +7,7 @@ public class Fish extends AbstractAnimal
         super(name, yearDiscovered);
     }
     @Override
-    public string move()
+    public String move()
     {
         return "swim";
     }

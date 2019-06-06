@@ -1,6 +1,6 @@
 package animals;
 
-public class Mammals extends AbstractAnimal
+public class Mammal extends AbstractAnimal
 {
     public Mammal(String name, int yearDiscovered)
     {

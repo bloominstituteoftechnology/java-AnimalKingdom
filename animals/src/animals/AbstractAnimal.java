@@ -3,9 +3,11 @@ package animals;
 public abstract class AbstractAnimal 
 {
     private static int maxID = 0;
-    private int id;
-    private String name;
-    private int yearDiscovered;
+
+    int id;
+    String name;
+    int yearDiscovered;
+    
     public AbstractAnimal(String name, int yearDiscovered)
     {
         maxID++;
@@ -13,24 +15,37 @@ public abstract class AbstractAnimal
         this.name = name;
         this.yearDiscovered = yearDiscovered;
     }
-    public String consume() 
+    public String consume()
     {
-        return "Consumes";
+        return "Food";
     }
 
-    public String move() 
+    public int getId()
     {
-        return "Moves";
+        return id;
     }
 
-    public String breathe() 
+    public String getName()
     {
-        return "Breathes";
+        return name;
     }
 
-    public String reproduce() 
+    public int getyearDiscovered()
     {
-        return "Reproduces";
+        return yearDiscovered;
     }
 
+    @Override
+    public String toString()
+    {
+        return "Name: " + getName() + " Year Named: " + getyearDiscovered() + "\n";
+    }
+
+    public abstract String move();
+
+    public abstract String breath();
+
+    public abstract String reproduce();
 }
+
+
