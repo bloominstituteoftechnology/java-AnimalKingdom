@@ -6,11 +6,6 @@ public abstract class AbstractAnimal
     private int id;
     private String name;
     private int yearDiscovered;
-
-    public abstract String move();
-    public abstract String breathe();
-    public abstract String reproduce();
-
     public AbstractAnimal(String name, int yearDiscovered)
     {
         maxID++;
@@ -18,19 +13,23 @@ public abstract class AbstractAnimal
         this.name = name;
         this.yearDiscovered = yearDiscovered;
     }
-    public String consume() {
+    public String consume() 
+    {
         return "Consumes";
     }
 
-    public String move() {
+    public String move() 
+    {
         return "Moves";
     }
 
-    public String breathe() {
+    public String breathe() 
+    {
         return "Breathes";
     }
 
-    public String reproduce() {
+    public String reproduce() 
+    {
         return "Reproduces";
     }
 

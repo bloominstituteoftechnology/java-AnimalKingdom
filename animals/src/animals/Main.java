@@ -17,6 +17,19 @@ public class Main
         animalCollection.add(new Mammal("Raccoon", 1758));
         animalCollection.add(new Mammal("Bigfoot", 2021));
 
+        //Birds
+        animalCollection.add(new Bird("Pigeon", 1837));
+        animalCollection.add(new Bird("Peacock", 1821));
+        animalCollection.add(new Bird("Toucan", 1758));
+        animalCollection.add(new Bird("Parrot", 1824));
+        animalCollection.add(new Bird("Swan", 1758));
+
+        //Fish
+        animalCollectionnew.add(new Fish("Salmon", 1758));
+        animalCollection.add(new Fish("Catfish", 1817));
+        animalCollection.add(new Fish("Perch", 1758));
+
+
     }
 
 }
