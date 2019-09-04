@@ -8,17 +8,17 @@ public class Fish extends AbstractAnimal {
 
     @Override
     public String move() {
-        return does("swims");
+        return ("swims");
     }
 
     
   @Override
   public String breath() {
-    return does("breathes with its gills");
+    return ("breathes with its gills");
   }
 
   @Override
   public String reproduce() {
-    return does("produces eggs");
+    return("produces eggs");
   }
 }
