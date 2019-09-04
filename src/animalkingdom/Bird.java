@@ -1,18 +1,18 @@
 package animalkingdom;
 
-public class Fish extends Animal {
-    public Fish(String name, int yearDiscovered) {
+public class Bird extends Animal {
+    public Bird(String name, int yearDiscovered) {
         super(name, yearDiscovered);
     }
 
     @Override
     public String move() {
-        return "Swims";
+        return "Flies";
     }
 
     @Override
     public String breathe() {
-        return "Gills";
+        return "Lungs";
     }
 
     @Override
