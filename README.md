@@ -11,6 +11,7 @@ Using a combination of abstract classes and lambda expressions, students will cr
 
 ## Instruction
 
+* [ ] Please fork and clone this repository. This repository does not have a starter project, so create one inside of the cloned repository folder. Regularly commit and push your code as appropriate.
 * [ ] Create an abstract class for animals
   * [ ] All animals consume food the same way
   * [ ] Each animal is assigned a unique number, a name, and year discovered regardless of classification.
