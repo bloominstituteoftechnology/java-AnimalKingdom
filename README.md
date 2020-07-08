@@ -28,7 +28,7 @@ Hint: think about abstract classes and creating an ArrayList using an abstract c
 
 Create a collection for the animals using the following data
 
-* [ ] **Mammals:**
+* [x] **Mammals:**
 
     | Name      | Year Named |
     |-----------|-------|
@@ -40,7 +40,7 @@ Create a collection for the animals using the following data
     | Raccoon   | 1758  |
     | Bigfoot   | 2021  |
 
-* [ ] **Birds:**
+* [x] **Birds:**
 
     | Name      | Year Named |
     |-----------|------|
@@ -50,7 +50,7 @@ Create a collection for the animals using the following data
     | Parrot    | 1824 |
     | Swan      | 1758 |
 
-* [ ] **Fish:**
+* [x] **Fish:**
 
     | Name      | Year Named |
     |-----------|------|

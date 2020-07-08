@@ -37,4 +37,13 @@ abstract class Animals {
     public abstract String breathe();
     public abstract String reproduce();
 
+    @Override
+    public String toString()
+    {
+        return "Animals{" +
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", yearDiscovered=" + yearDiscovered +
+            '}' + '\n';
+    }
 }
