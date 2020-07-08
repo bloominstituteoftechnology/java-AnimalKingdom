@@ -19,10 +19,10 @@ Using a combination of abstract classes and lambda expressions, students will cr
 - [x] Methods will return a string saying how that animal implements the action
   - [x] All animals can move, breath, reproduce. How they do that, so what string should get returned when the method is executed, varies by animal type.
 
-* [ ] Create classes for mammals, birds, fish
-  * [ ] Mammals move - walk, breath - lungs, reproduce - live births
-  * [ ] Birds move - fly, breath - lungs, reproduce - eggs
-  * [ ] Fish move - swim, breath - gills, reproduce - eggs
+* [x] Create classes for mammals, birds, fish
+  * [x] Mammals move - walk, breath - lungs, reproduce - live births
+  * [x] Birds move - fly, breath - lungs, reproduce - eggs
+  * [x] Fish move - swim, breath - gills, reproduce - eggs
 
 Hint: think about abstract classes and creating an ArrayList using an abstract class type.
 
