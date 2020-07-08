@@ -5,6 +5,16 @@ import java.util.ArrayList;
 
 public class Main {
 
+    public static void printAnimals(List<Animals> animals, CheckAnimal tester)
+    {
+        for(Animals a:animals) 
+        {
+            if (tester.test(a))
+            {
+                System.out.println(a.getName() + " " + a.reproduce() + " " + a.move() + " " + a.breathe() + " " + a.getYearDiscovered());
+            }
+        }
+    }
     public static void main(String[] args) {
         System.out.println("-----------------------------");
         System.out.println("Hello from the AnimalKingdom");
@@ -35,8 +45,35 @@ public class Main {
 
         System.out.println("*** MVP ***");
         System.out.println();
-        System.out.println("*** List all the animals in descending order by year named ***");
+        System.out.println("*** List all the animals in descending order by year discovered ***");
         animalArrList.sort((a1, a2) -> a2.getYearDiscovered() - a1.getYearDiscovered());
-        System.out.println(animalArrList.toString());;
+        System.out.println(animalArrList.toString());
+
+        System.out.println();
+        System.out.println("*** List all the animals alphabetically ***");
+        animalArrList.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+        System.out.println(animalArrList.toString());
+
+        System.out.println();
+        System.out.println("*** List all the animals order by how they move ***");
+        animalArrList.sort((a1, a2) -> a1.move().compareToIgnoreCase(a2.move()));
+        System.out.println(animalArrList.toString());
+
+        System.out.println();
+        System.out.println("*** List only those animals the breath with lungs ***");
+        printAnimals(animalArrList, a -> (a.breathe().equalsIgnoreCase("lungs")));
+
+        System.out.println();
+        System.out.println("*** List only those animals that breathe with lungs and were discovered in 1758 ***");
+        printAnimals(animalArrList, a -> (a.breathe().equalsIgnoreCase("lungs") && a.getYearDiscovered() == 1758));
+
+        System.out.println();
+        System.out.println("*** List only those animals that lay eggs and breathe with lungs ***");
+        printAnimals(animalArrList, a -> (a.reproduce().equalsIgnoreCase("eggs") && a.breathe().equalsIgnoreCase("lungs")));
+
+        System.out.println();
+        System.out.println("*** List alphabetically only those animals that were named in 1758 ***");
+        animalArrList.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+        printAnimals(animalArrList, a -> (a.getYearDiscovered() == 1758));
     }
 }
