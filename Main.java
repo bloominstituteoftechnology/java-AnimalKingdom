@@ -69,6 +69,7 @@ public class Main {
             // * [ ] List only those animals that lay eggs and breath with lungs
             filterAnimals(myList, v -> (v.reproduce() == "Eggs") && (v.breath() == "Lungs"));
             // * [ ] List alphabetically only those animals that were named in 1758
-            filterAnimals(myList, v -> (v.getYear() == 1758)).sort((a, b) -> a.getName().compareToIgnoreCase(b.getName()));
+            myList.sort((a, b) -> a.getName().compareToIgnoreCase(b.getName()));
+            filterAnimals(myList, v -> (v.getYear() == 1758));
     }
 }
