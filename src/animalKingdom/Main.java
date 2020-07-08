@@ -2,10 +2,26 @@ package animalKingdom;
 
 import java.util.List;
 import java.util.ArrayList;
+// import java.util.Collections;
 
 public class Main 
 {
-    
+    public static List<Animal> filteredList = new ArrayList<>();
+
+    public static void filterAnimal(List<Animal> anm, CheckAnimal tester)
+    {
+        filteredList.clear();
+
+        for (Animal a : anm)
+        {
+            if (tester.test(a))
+            {
+                System.out.println(a);
+                filteredList.add(a);
+            }
+        }
+    }
+
     public static void main(String[] arg)
     {
         System.out.println("*** Animal Kingdom ***");
@@ -31,6 +47,7 @@ public class Main
         Fish perch = new Fish(15, "Perch", 1758);
 
         List<Animal> animal = new ArrayList<>();
+
         animal.add(panda);
         animal.add(zebra);
         animal.add(koala);
@@ -46,8 +63,32 @@ public class Main
         animal.add(salmon);
         animal.add(catfish);
         animal.add(perch);
+
         System.out.println();
+        System.out.println("*** by year ***");
+        animal.sort((Animal a1, Animal a2) -> Integer.compare(a2.getYear(), a1.getYear()));
         System.out.println(animal);
+        System.out.println();
+        System.out.println("***Alphabetically***");
+        animal.sort((Animal a1, Animal a2) -> a1.getName().compareTo(a2.getName()));
+        System.out.println(animal);
+        System.out.println();
+        System.out.println("*** how they move ***");
+        animal.sort((Animal a1, Animal a2) -> a1.move().compareTo(a2.move()));
+        System.out.println(animal);
+        System.out.println();
+        System.out.println("*** Breath with lungs ***");
+        filterAnimal(animal, a -> a.breath() == "Lungs");
+        System.out.println();
+        System.out.println("*** Lungs and Eggs ***");
+        filterAnimal(animal, a -> (a.breath() == "Lungs") && (a.reproduce() == "Eggs"));
+        System.out.println();
+        System.out.println("*** lungs and 1978 ***");
+        filterAnimal(animal, a -> (a.breath() == "Lungs") && (a.getYear() == 1758));
+        System.out.println();
+        System.out.println("*** 1978 ***");
+        filterAnimal(animal, a -> a.getYear() == 1758);
+
 
     }
 }
