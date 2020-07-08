@@ -72,7 +72,7 @@ Create a collection for the animals using the following data
 
 ## Results
 
-### MPV
+### MVP
 
 The MVP of this application would produce the following output
 
