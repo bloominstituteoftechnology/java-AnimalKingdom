@@ -71,5 +71,5 @@ public class Main {
             // * [ ] List alphabetically only those animals that were named in 1758
             myList.sort((a, b) -> a.getName().compareToIgnoreCase(b.getName()));
             filterAnimals(myList, v -> (v.getYear() == 1758));
-    }
+    } 
 }
