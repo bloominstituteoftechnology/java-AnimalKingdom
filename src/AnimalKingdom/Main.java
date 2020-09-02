@@ -34,19 +34,18 @@ public class Main
         Mammals raccoon = new Mammals("raccoon", 1758);
         Mammals bigfoot = new Mammals("bigfoot", 2021);
 
-        // Fish
         Fish salmon = new Fish("Salmon", 1758);
         Fish catfish = new Fish("Catfish", 1817);
         Fish perch = new Fish("perch", 1758);
 
-        // Birds
+       
         Birds pigeon = new Birds("Pigeon", 1837);
         Birds peacock = new Birds("peacock", 1821);
         Birds toucan = new Birds("toucan", 1758);
         Birds parrot = new Birds("parrot", 1824);
         Birds swan = new Birds("swan", 1758);
 
-        // Arrays
+
         List<Animals> animals = new ArrayList<>();
         animals.add(panda);
         animals.add(zebra);
