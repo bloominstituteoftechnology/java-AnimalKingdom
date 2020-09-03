@@ -27,8 +27,12 @@ public class Birds extends AbstractAnimals {
         return "Eggs";
     }
 
+    public String classification() {
+        return "Bird";
+    }
+
     @Override
     public String toString(){
-        return "\n Id: " + animalId + "Name: " + birdName + "Year Named: " + yearDiscovered;
+        return "\n Id: " + animalId + " Name: " + birdName + " Year Named: " + yearDiscovered;
     }
 }

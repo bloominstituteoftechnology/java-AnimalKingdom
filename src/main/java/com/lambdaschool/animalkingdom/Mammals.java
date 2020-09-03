@@ -18,18 +18,22 @@ public class Mammals  extends AbstractAnimals {
         return yearDiscovered;
     }
     public String move() {
-        return "Swim";
+        return "Walks";
     }
     public String breath() {
-        return "Gills";
+        return "Lungs";
     }
 
     public String reproduce() {
-        return "Eggs";
+        return "Live Births";
+    }
+
+    public String classification() {
+        return "Mammals";
     }
 
     @Override
     public String toString(){
-        return "\n Id: " + animalId + "Name: " + mammalName + "Year Named: " + yearDiscovered;
+        return "\n Id: " + animalId + " Name: " + mammalName + " Year Named: " + yearDiscovered;
     }
 }

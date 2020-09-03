@@ -21,6 +21,8 @@ abstract class AbstractAnimals {
 
     abstract String reproduce();
 
+    abstract String classification();
+
     int getAnimalId() {
         return animalId;
     }
