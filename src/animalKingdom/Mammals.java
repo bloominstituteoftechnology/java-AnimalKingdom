@@ -5,43 +5,56 @@ public class Mammals extends Animal {
     // breath comes from parent class
     // reproduce comes from parent class
 
-    private int maxYear = 0;
-    private int id;
-    private String name;
-    private int yearDiscovered;
+    public int maxYear = 0;
+    public int id;
+    public String name;
+    public int year;
 
-    public Mammals(String name, int yearDiscovered) {
+    // parent constructor that takes in object from parent class
+    public Mammals(String name, int year, String move, String breath, String reproduce) {
         super(move, breath, reproduce);
         maxYear++;
         id = maxYear;
         this.name = name;
-        this.yearDiscovered = yearDiscovered;
+        this.year = year;
+    }
+
+    // child constuctor that just takes in object from this class
+    public Mammals(String name, int year) {
+        maxYear++;
+        id = maxYear;
+        this.name = name;
+        this.year = year;
     }
 
 
     // adding to methoed from parent class
-    @Override
-    public String getBreath() {
-        return breath;
-    }
-
-    @Override
-    public String getMove() {
-        return move;
-    }
-
-    @Override
-    public String getReproduce() {
-        return reproduce;
-    }
+//    @Override
+//    public String getBreath() {
+//        return breath;
+//    }
+//
+//    @Override
+//    public String getMove() {
+//        return move;
+//    }
+//
+//    @Override
+//    public String getReproduce() {
+//        return reproduce;
+//    }
 
     // getters
+    @Override
     public String getName() {
+
         return name;
     }
 
-    public int getYearDiscovered() {
-        return yearDiscovered;
+    @Override
+    public int getYear() {
+
+        return year;
     }
 
     // setters
@@ -49,14 +62,14 @@ public class Mammals extends Animal {
         this.name = name;
     }
 
-    public void setYearDiscovered(int yearDiscovered) {
-        this.yearDiscovered = yearDiscovered;
+    public void setYear(int year) {
+        this.year = year;
     }
 
     /* Making mammals print readable */
     @Override
     public String toString() {
-        return "id:" + " " + id + " " + "name:" + " " + name + " " + "yearNamed:" + " " + yearDiscovered;
+        return "id:" + " " + id + " " + "name:" + " " + name + " " + "yearNamed:" + " " + year;
     }
 
 }

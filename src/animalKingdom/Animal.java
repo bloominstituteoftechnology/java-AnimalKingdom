@@ -18,8 +18,13 @@ abstract class Animal {
     }
 
     // declaring getters at parent and will implement the methoed in the children classess
-    abstract String getBreath();
-    abstract String getMove();
-    abstract String getReproduce();
+//    abstract String getBreath();
+//    abstract String getMove();
+//    abstract String getReproduce();
+
+    // needs this abstract methoed to access methoed from Mammals at parent Animal
+    abstract int getYear();
+    abstract String getName();
+
 
 }
