@@ -27,23 +27,6 @@ public class Mammals extends Animal {
         this.year = year;
     }
 
-
-    // adding to methoed from parent class
-//    @Override
-//    public String getBreath() {
-//        return breath;
-//    }
-//
-//    @Override
-//    public String getMove() {
-//        return move;
-//    }
-//
-//    @Override
-//    public String getReproduce() {
-//        return reproduce;
-//    }
-
     // getters
     @Override
     public String getName() {
