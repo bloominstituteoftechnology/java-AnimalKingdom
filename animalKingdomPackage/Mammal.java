@@ -1,21 +1,21 @@
 package animalKingdomPackage;
 
-public class Fish extends AbstractAnimal{
-    public Fish(String name, int yearDiscovered) {
+public class Mammal extends AbstractAnimal{
+    public Mammal(String name, int yearDiscovered) {
         super(name, yearDiscovered);
     }
 
     @Override
     public String getMovementType(){
-        return "swim";
+        return "walk";
     }
     @Override
     public String getBreathingType(){
-        return "gills";
+        return "lungs";
     }
     @Override
     public String getReproductionType(){
-        return "eggs";
+        return "live birth";
     }
 
     @Override
