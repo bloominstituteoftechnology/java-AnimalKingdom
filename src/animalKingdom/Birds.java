@@ -2,7 +2,7 @@ package animalKingdom;
 
 public class Birds extends Animal {
 
-    public int maxYear = 0;
+    public static int maxYear = 0;
     public int id;
     public String name;
     public int year;

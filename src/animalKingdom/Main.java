@@ -29,8 +29,30 @@ public class Main {
     Fish catfish = new Fish("Catfish", 1817);
     Fish perch =  new Fish("Perch", 1758);
 
-    System.out.println("\n*** List all the animals in descending order by year named ***");
-    System.out.println();
+    // List the animals on how they move. Only need three based on the three animal types
+    // First pass solution:
+    // Mammals move
+    panda.setMove("Walk");
+    zebra.setMove("Walk");
+    koala.setMove("Walk");
+    sloth.setMove("Walk");
+    armadillo.setMove("Walk");
+    raccoon.setMove("Walk");
+    bigfoot.setMove("Walk");
+
+    // Birds move
+    pigeon.setMove("Fly");
+    peacock.setMove("Fly");
+    toucan.setMove("Fly");
+    parrot.setMove("Fly");
+    swan.setMove("Fly");
+
+    // Fish move
+    salmon.setMove("Swim");
+    catfish.setMove("Swim");
+    perch.setMove("Swim");
+
+
     // Create ArrayList
     List<Animal> animals = new ArrayList<>();
     // Mammals
@@ -64,6 +86,12 @@ public class Main {
     System.out.println("\n*** List all the animals alphabetically ***");
     System.out.println();
     animals.sort((o1, o2) -> o1.getName().compareToIgnoreCase(o2.getName()));
+    System.out.println(animals);
+
+    System.out.println();
+    System.out.println("\n*** List all the animals order by how they move ***");
+    System.out.println();
+    animals.sort((m1, m2) -> m1.getMove().compareToIgnoreCase(m2.getMove()));
     System.out.println(animals);
 
     }

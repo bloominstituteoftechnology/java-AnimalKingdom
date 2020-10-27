@@ -5,7 +5,7 @@ public class Mammals extends Animal {
     // breath comes from parent class
     // reproduce comes from parent class
 
-    public int maxYear = 0;
+    public static int maxYear = 0;
     public int id;
     public String name;
     public int year;
@@ -38,6 +38,10 @@ public class Mammals extends Animal {
     public int getYear() {
 
         return year;
+    }
+
+    public int getId() {
+        return id;
     }
 
     // setters
