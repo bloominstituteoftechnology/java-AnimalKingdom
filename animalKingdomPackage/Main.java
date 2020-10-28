@@ -26,6 +26,8 @@ public class Main {
         System.out.println(panda.toString());
         System.out.println(pigeon.toString());
         System.out.println(salmon.toString());
+
+        System.out.println(perch.toString());
     }
 
     public static void main(String[] args) {
