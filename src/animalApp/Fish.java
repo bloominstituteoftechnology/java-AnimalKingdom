@@ -1,45 +1,29 @@
 package animalApp;
 
-public class Fish implements Animal {
-  private int food = 0;
-  private int number = 0;
-  private String name;
-  private int year = 0;
+public class Fish extends Animals
+{
 
-  public Mammals(String name, int number, int year) {
-    this.name = name;
-    this.number = number;
-    this.year = year;
+  public Fish(String name, int year)
+  {
+      super(name, year);
   }
 
   @Override
-  public void move() {
-    food--;
+  public String move()
+  {
+      return "swim";
   }
 
   @Override
-  public void eat(int units){
-    food += units;
+  public String breath()
+  {
+      return "gills";
   }
 
   @Override
-  public String move() {
-    return "Swim";
+  public String reproduce()
+  {
+      return "eggs";
   }
 
-  @Override
-  public String breathe() {
-    return "Gills";
-  }
-
-  @Override
-  public String reproduce() {
-    return "Eggs";
-  }
-
-  @Override
-  public String toString() {
-    return "Name: " + name + "\n" +
-      "Food: " + food;
-  }
 }
