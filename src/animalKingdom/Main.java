@@ -25,7 +25,14 @@ class Main
     animals.add(new Fish("Perch", 1758));
 
     animals.sort((x1, x2) -> x2.yearNamed - x1.yearNamed);
-    System.out.println(animals);
+    System.out.println(animals + "\n");
+
+    animals.sort((x1, x2) -> x1.name.compareToIgnoreCase(x2.name));
+    System.out.println(animals + "\n");
+
+    animals.sort((x1, x2) -> x1.move().compareToIgnoreCase(x2.move()));
+    System.out.println(animals + "\n");
+
     animals.forEach(a -> System.out.println(a.describe()));
   }
 }
