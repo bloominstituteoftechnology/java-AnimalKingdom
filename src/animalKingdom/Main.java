@@ -59,9 +59,15 @@ class Main
     lungsAndEggs.forEach(a -> System.out.println(a.describe()));
     System.out.println();
 
-    List<Animal> alpha1758 = filterAnimals(mouthBreathers, x -> x.yearNamed == 1758);
+    List<Animal> alpha1758 = filterAnimals(animals, x -> x.yearNamed == 1758);
     alpha1758.sort((x1, x2) -> x1.name.compareToIgnoreCase(x2.name));
     alpha1758.forEach(a -> System.out.println(a.describe()));
     System.out.println();
+
+    List<Animal> alphaMammals = filterAnimals(animals, x -> x instanceof Mammal);
+    alphaMammals.sort((x1, x2) -> x1.name.compareToIgnoreCase(x2.name));
+    alphaMammals.forEach(a -> System.out.println(a.describe()));
+    System.out.println();
+
   }
 }
