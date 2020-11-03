@@ -29,4 +29,14 @@ abstract class Animal
 
   abstract String reproduce();
 
+  public String describe()
+  {
+    return String.format("%s %s %s %s %d", name, reproduce(), move(), breathe(), yearNamed);
+  }
+
+  @Override
+  public String toString()
+  {
+    return "Animals{id=" + id + ", name='" + name + ", yearNamed=" + yearNamed + "}";
+  }
 }

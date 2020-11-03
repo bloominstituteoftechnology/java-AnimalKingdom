@@ -9,6 +9,6 @@ class Main
   {
     List<Animal> animals = new ArrayList<>();
     animals.add(new Mammal("Panda", 1869));
-    animals.forEach(v -> System.out.println(v));
+    animals.forEach(v -> System.out.println(v.describe()));
   }
 }
