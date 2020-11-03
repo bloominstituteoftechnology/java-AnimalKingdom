@@ -5,6 +5,20 @@ import java.util.List;
 
 class Main
 {
+  private static List<Animal> filterAnimals(List<Animal> originalList, FilterAnimal expr)
+  {
+    List<Animal> filteredList = new ArrayList<>();
+
+    for (Animal a : originalList)
+    {
+      if (expr.filter(a))
+      {
+        filteredList.add(a);
+      }
+    }
+    return filteredList;
+  }
+
   public static void main(String[] args)
   {
     List<Animal> animals = new ArrayList<>();
@@ -33,6 +47,8 @@ class Main
     animals.sort((x1, x2) -> x1.move().compareToIgnoreCase(x2.move()));
     System.out.println(animals + "\n");
 
-    animals.forEach(a -> System.out.println(a.describe()));
+    List<Animal> mouthBreathers = filterAnimals(animals, x -> x.breathe() == "lungs");
+    mouthBreathers.forEach(a -> System.out.println(a.describe()));
+
   }
 }
