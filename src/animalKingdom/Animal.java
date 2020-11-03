@@ -3,8 +3,8 @@ package animalKingdom;
 abstract class Animal
 {
   private static int maxId = 0;
-  int id, yearNamed;
-  String name;
+  public int id, yearNamed;
+  public String name;
 
   public Animal()
   {
