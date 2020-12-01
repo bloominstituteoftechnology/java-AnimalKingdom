@@ -47,6 +47,4 @@ public abstract class Animal
       ", year=" + year +
       '}' + '\n';
   }
-
-
 }
