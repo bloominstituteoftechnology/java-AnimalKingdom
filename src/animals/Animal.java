@@ -1,4 +1,4 @@
-pacakage animals;
+package animals;
 
 public abstract class Animal
 {
@@ -34,7 +34,7 @@ public abstract class Animal
     return year;
   }
 
-  public abstract Sring move();
+  public abstract String move();
   public abstract String breathe();
   public abstract String reproduce();
 

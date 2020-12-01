@@ -2,7 +2,7 @@ package animals;
 
 public class Birds extends Animal
 {
-    public Bird(String name, int year)
+    public Birds(String name, int year)
     {
         super(name, year);
     }
