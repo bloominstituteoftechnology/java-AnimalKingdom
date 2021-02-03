@@ -1,32 +1,35 @@
-# Project Animal Kingdom Search
+# Sprint 1 - Module 2 - Module Project - Animal Kingdom Search
 
 A student that completes this project shows that they can:
 
-* Use and implement abstract classes
-* Use and implement Lambda Expressions
+* craft and manipulate Collections
+* craft and manipulate ArrayList Collections
+* use and implement interfaces
+* use and implement Lambda Expressions
+* use and implement abstract classes
 
 ## Introduction
 
-Using a combination of abstract classes and lambda expressions, students will create and manipulate a list of animals using object oriented design principles.
+Using a combination of abstract classes, an interface, sorting, and lambda expressions, students will create and manipulate a list of animals using object-oriented design principles.
 
-## Instruction
+## Instructions and Completion Requirements
 
 * [ ] Please fork and clone this repository. This repository does not have a starter project, so create one inside of the cloned repository folder. Regularly commit and push your code as appropriate.
 * [ ] Create an abstract class for animals
   * [ ] All animals consume food the same way
-  * [ ] Each animal is assigned a unique number, a name, and year discovered regardless of classification.
+  * [ ] Each animal is assigned a unique number as an id, a name, and a year named, regardless of classification.
 
-- [ ] Methods will return a string saying how that animal implements the action
-  - [ ] All animals can move, breath, reproduce. How they do that, so what string should get returned when the method is executed, varies by animal type.
+* [ ] Methods will return a string saying how that animal implements the action
+  * [ ] All animals can move, breathe, reproduce. How they do that varies by animal type. This variation means that the string that gets returned by a method is different for each animal type (mammals, birds, fish).
 
 * [ ] Create classes for mammals, birds, fish
-  * [ ] Mammals move - walk, breath - lungs, reproduce - live births
-  * [ ] Birds move - fly, breath - lungs, reproduce - eggs
-  * [ ] Fish move - swim, breath - gills, reproduce - eggs
+  * [ ] Mammals **move** by walking, **breath** with lungs, and **reproduce** via live births
+  * [ ] Birds **move** by flying, **breath** with lungs, and **reproduce** via eggs
+  * [ ] Fish **move** by swimming, **breath** with gills, and **reproduce** via eggs
 
 Hint: think about abstract classes and creating an ArrayList using an abstract class type.
 
-Create a collection for the animals using the following data
+Create a collection for the animals using the following data. You will have one collection of animals; this collection will contain mammals, birds, and fish.
 
 * [ ] **Mammals:**
 
@@ -58,14 +61,16 @@ Create a collection for the animals using the following data
     | Catfish   | 1817 |
     | Perch     | 1758 |
 
-* Using Lambda Expressions and displaying the results to the console
+* Using Lambda Expressions and displaying the results to the console:
   * [ ] List all the animals in descending order by year named
   * [ ] List all the animals alphabetically
-  * [ ] List all the animals order by how they move
+  * [ ] List all the animals in order by how they move
   * [ ] List only those animals the breath with lungs
   * [ ] List only those animals that breath with lungs and were named in 1758
   * [ ] List only those animals that lay eggs and breath with lungs
   * [ ] List alphabetically only those animals that were named in 1758
+
+*Note: to get your collection to print nicely to the console, you may have to override the toString method on the class that you design.*
 
 * Stretch Goal
   * [ ] For the list of animals, list alphabetically those animals that are mammals.
@@ -74,7 +79,7 @@ Create a collection for the animals using the following data
 
 ### MVP
 
-The MVP of this application would produce the following output
+The MVP of this application would produce the following output.
 
 ```TEXT
 *** MVP ***
