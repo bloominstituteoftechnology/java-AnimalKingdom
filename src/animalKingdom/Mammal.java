@@ -1,9 +1,9 @@
 package animalKingdom;
 
-public class Mammals extends Animal {
+public class Mammal extends Animal {
     // there are no extra fields needed
 
-    public Mammals(String name, int year) {
+    public Mammal(String name, int year) {
         super(name, year);
     }
 

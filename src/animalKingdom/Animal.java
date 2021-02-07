@@ -31,4 +31,10 @@ abstract class Animal {
     int getYear() {
         return year;
     }
+
+    @Override
+    public String toString()
+    {
+        return "id=" + id + " " + "name=" + name + " " + "yearNamed=" + year;
+    }
 }
