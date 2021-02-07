@@ -11,17 +11,25 @@ abstract class Animal {
     abstract String breathe();
     abstract String reproduce();
 
-    public String getName()
+    public Animal(String name, int year)
+    {
+        maxId++;
+        id = maxId;
+        this.name = name;
+        this.year = year;
+    }
+
+    String getName()
     {
         return name;
     }
 
-    public int getId()
+    int getId()
     {
         return id;
     }
 
-    public int getYear()
+    int getYear()
     {
         return year;
     }
