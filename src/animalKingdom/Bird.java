@@ -1,24 +1,21 @@
 package animalKingdom;
 
-public class Mammals extends Animal {
-    // there are no extra fields needed
+public class Bird extends Animal {
 
-    public Mammals(String name, int year) {
+    public Bird(String name, int year) {
         super(name, year);
     }
 
     @Override
     public String reproduce() {
-        return "live births";
+        return "eggs";
     }
-
     @Override
     public String move() {
-        return "lungs";
+        return "fly";
     }
-
     @Override
     public String breathe() {
-        return "walk";
+        return "lungs";
     }
 }
