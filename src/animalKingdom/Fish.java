@@ -17,4 +17,10 @@ public class Fish extends Animal {
     public String move() {
         return "swim";
     }
+
+    @Override
+    public String filteredString()
+    {
+        return name + " " + reproduce() + " " + move() + " " + breathe() + " " + year; 
+    }
 }

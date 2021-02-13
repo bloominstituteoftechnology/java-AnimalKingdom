@@ -21,4 +21,10 @@ public class Mammal extends Animal {
     public String breathe() {
         return "walk";
     }
+
+    @Override
+    public String filteredString()
+    {
+        return name + " " + reproduce() + " " + move() + " " + breathe() + " " + year; 
+    }
 }

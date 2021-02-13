@@ -18,4 +18,10 @@ public class Bird extends Animal {
     public String breathe() {
         return "lungs";
     }
+
+    @Override
+    public String filteredString()
+    {
+        return name + " " + reproduce() + " " + move() + " " + breathe() + " " + year; 
+    }
 }

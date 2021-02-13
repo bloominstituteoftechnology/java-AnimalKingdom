@@ -13,6 +13,8 @@ abstract class Animal {
 
     abstract String reproduce();
 
+    abstract String filteredString();
+
     public Animal(String name, int year) {
         maxId++;
         id = maxId;

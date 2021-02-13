@@ -5,9 +5,19 @@ import java.util.List;
 import java.util.Collections;
 
 public class Main {
-    // public static Animal lesserValue( Animal a, Animal b) {
 
-    // }
+    private static List<Animal> filteredAnimals(List<Animal> animals, AnimalCompare checker) 
+    {
+        List<Animal> tempList = new ArrayList<>();
+        for (Animal v: animals)
+        {
+            if (checker.checkAnimal(v))
+            {
+                tempList.add(v);
+            }
+        }
+        return tempList;
+    }
 
     public static void main(String[] args) {
         Mammal panda = new Mammal("Panda", 1869);
@@ -22,7 +32,7 @@ public class Main {
         Bird peacock = new Bird("Peacock", 1821);
         Bird toucan = new Bird("Toucan", 1758);
         Bird parrot = new Bird("Parrot", 1824);
-        Bird swan = new Bird("Swan", 1785);
+        Bird swan = new Bird("Swan", 1758);
 
         Fish salmon = new Fish("Salmon", 1758);
         Fish catfish = new Fish("Catfish", 1817);
@@ -55,5 +65,18 @@ public class Main {
         System.out.println("\n **** sorted how then animal moves ****\n");
         myAnimalList.sort((v1, v2) -> v1.move().compareToIgnoreCase(v2.move()));
         myAnimalList.forEach((v) -> System.out.println(v));
+        System.out.println("\n **** filtering out Animals that dont have lungs ****\n");
+        List<Animal> lungAnimals = filteredAnimals(myAnimalList, (v) -> ((v instanceof Mammal) || (v instanceof Bird)));
+        lungAnimals.forEach((v) -> System.out.println(v.filteredString()));
+        System.out.println("\n **** filtering out Animals that dont have lungs and aren't born in 1758 ****\n");
+        List<Animal> lungAnimalsYear = filteredAnimals(myAnimalList, (v) -> ((v instanceof Mammal) || (v instanceof Bird)) && v.getYear() == 1758);
+        lungAnimalsYear.forEach((v) -> System.out.println(v.filteredString()));
+        System.out.println("\n *** List only those animals that lay eggs and breath with lungs ***\n");
+        List<Animal> lungEggAnimals = filteredAnimals(myAnimalList, (v) -> ((v instanceof Bird)));
+        lungEggAnimals.forEach((v) -> System.out.println(v.filteredString()));
+        System.out.println("\n *** List alphabetically only those animals that were named in 1758 ***\n");
+        List<Animal> AlphabeticallyAnimals = filteredAnimals(myAnimalList, (v) -> (v.getYear() == 1758));
+        AlphabeticallyAnimals.sort((v1, v2) -> v1.getName().compareToIgnoreCase(v2.getName()));
+        AlphabeticallyAnimals.forEach((v) -> System.out.println(v.filteredString()));
     }
 }
