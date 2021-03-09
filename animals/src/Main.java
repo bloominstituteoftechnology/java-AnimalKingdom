@@ -38,5 +38,8 @@ public class Main
         // | Salmon | 1758 |
         // | Catfish | 1817 |
         // | Perch | 1758 |
+        Fish salmon = new Fish(13, "Salmon", 1758);
+        Fish catfish = new Fish(14, "Catfish", 1817);
+        Fish salmon = new Fish(15, "Perch", 1758);
     }
 }
