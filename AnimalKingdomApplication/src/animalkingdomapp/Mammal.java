@@ -1,15 +1,7 @@
 package animalkingdomapp;
 
 public class Mammal extends Animal {
-  /*
-  protected int maxId;
-  protected int id;
-  protected int energy;
-  protected String name;
-  protected int year;
-  
-  */
-  // public String getMove();
+ 
 
   public Mammal(String name, int year) {
     super(name, year);
