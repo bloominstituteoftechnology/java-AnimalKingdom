@@ -20,6 +20,12 @@ public class Main {
     animals.add(new Mammal("Raccoon", 1758));
     animals.add(new Mammal("Bigfoot", 2021));
 
+    // Create birds
+    animals.add(new Bird("Pigeon", 1837));
+    animals.add(new Bird("Peacock", 1821));
+    animals.add(new Bird("Toucan", 1758));
+    animals.add(new Bird("Parrot", 1824));
+    animals.add(new Bird("Swan", 1758));
     
     System.out.println(animals);
   }
