@@ -1,6 +1,7 @@
 package animalKingdom;
 
 abstract class Animal {
+  protected static int maxid = 1;
   protected int id;
   protected String name;
   protected int yearnamed;
@@ -15,6 +16,6 @@ abstract class Animal {
 
   @Override
   public String toString() {
-    return "{id=" + this.id + ", name=" + this.name + "yearNamed=" + this.yearnamed + "}";
+    return "Animal {id=" + this.id + ", name=" + this.name + ", yearNamed=" + this.yearnamed + "}";
   }
 }

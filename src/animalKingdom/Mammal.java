@@ -1,11 +1,12 @@
 package animalKingdom;
 
 public class Mammal extends Animal {
-  private static int maxid = 1;
-
   public Mammal(String name, int yearnamed) {
     this.id = maxid;
     maxid++;
+
+    this.name = name;
+    this.yearnamed = yearnamed;
   }
 
   @Override
