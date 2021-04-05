@@ -12,4 +12,9 @@ abstract class Animal {
   abstract String move();
   abstract String breathe();
   abstract String reproduce();
+
+  @Override
+  public String toString() {
+    return "{id=" + this.id + ", name=" + this.name + "yearNamed=" + this.yearnamed + "}";
+  }
 }
