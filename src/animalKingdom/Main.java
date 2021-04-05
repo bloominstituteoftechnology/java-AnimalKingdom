@@ -2,6 +2,34 @@ package animalKingdom;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+
+class SortByYear implements Comparator<Animal> {
+  public int compare(Animal a, Animal b) {
+    return b.getYearnamed() - a.getYearnamed();
+  }
+}
+
+class SortAnimals {
+  private Comparator<Animal> comparator;
+
+  public SortAnimals(Comparator<Animal> comparator) {
+    this.comparator = comparator;
+  }
+
+  public List<Animal> sort(List<Animal> animals) {
+    ArrayList<Animal> copy = new ArrayList<>();
+    animals.forEach((a) -> {
+      copy.add(a);
+    });
+
+    Collections.sort(copy, this.comparator);
+
+    return copy;
+  }
+}
 
 public class Main {
   private static void workWithData() {
@@ -27,6 +55,9 @@ public class Main {
     animals.add(new Fish("Salmon", 1758));
     animals.add(new Fish("Catfish", 1817));
     animals.add(new Fish("Perch", 1758));
+
+    List<Animal> sortedByYear = new SortAnimals(new SortByYear()).sort(animals);
+    System.out.println(sortedByYear);
   }
 
   public static void main(String[] args) {
