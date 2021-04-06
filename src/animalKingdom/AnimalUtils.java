@@ -1,6 +1,7 @@
 package animalKingdom;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -9,13 +10,29 @@ interface FilterAnimals {
 }
 
 public class AnimalUtils {
-  public static List<Animal> filter(List<Animal> aList, FilterAnimals aFilterAnimals) {
+  private static List<Animal> copy(List<Animal> animals) {
+    List<Animal> animalCopy = new ArrayList<>();
+    for (Animal animal : animals) {
+      animalCopy.add(animal);
+    }
+    return animalCopy;
+  }
+
+  public static List<Animal> filter(List<Animal> animals, FilterAnimals animalFilter) {
     List<Animal> filteredList = new ArrayList<>();
-    for (Animal a : aList) {
-      if (aFilterAnimals.test(a)) {
+    for (Animal a : animals) {
+      if (animalFilter.test(a)) {
         filteredList.add(a);
       }
     }
     return filteredList;
+  }
+
+  public static List<Animal> sort(List<Animal> animals, Comparator<Animal> animalComparator) {
+    List<Animal> sorted = copy(animals);
+
+    Collections.sort(sorted, animalComparator);
+
+    return sorted;
   }
 }

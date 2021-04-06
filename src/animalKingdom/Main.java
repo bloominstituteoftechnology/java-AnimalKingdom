@@ -72,7 +72,9 @@ public class Main {
     animals.add(new Fish("Perch", 1758));
 
     // Sort by Year named - descending
-    List<Animal> sortedByYear = new SortAnimals(new SortByYear()).sort(animals);
+    // List<Animal> sortedByYear = new SortAnimals(new SortByYear()).sort(animals);
+    // printAnimals("Sorted by year", sortedByYear);
+    List<Animal> sortedByYear = AnimalUtils.sort(animals, new SortByYear());
     printAnimals("Sorted by year", sortedByYear);
 
     List<Animal> sortedByName = new SortAnimals(new SortByName()).sort(animals);
