@@ -2,9 +2,9 @@ package animalKingdom;
 
 abstract class Animal {
   protected static int maxid = 1;
-  private int id;
-  private String name;
-  private int yearnamed;
+  protected int id;
+  protected String name;
+  protected int yearnamed;
 
   public void consumeFood(String food) {
     System.out.println("Consumes: " + food);
@@ -36,6 +36,9 @@ abstract class Animal {
 
   @Override
   public String toString() {
-    return "Animal {id=" + this.id + ", name=" + this.name + ", yearNamed=" + this.yearnamed + "}";
+    return "Animal '" + this.getName() + "': \n" + 
+            "{ id=" + this.id + ", \n" +
+            "  name=" + this.name + ",\n" + 
+            "  yearNamed=" + this.yearnamed + "\n}";
   }
 }

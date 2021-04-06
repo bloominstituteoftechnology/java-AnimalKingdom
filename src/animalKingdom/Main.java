@@ -2,13 +2,23 @@ package animalKingdom;
 
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+
+interface FilterAnimals {
+  boolean test(Animal animal);
+}
 
 class SortByYear implements Comparator<Animal> {
   public int compare(Animal a, Animal b) {
     return b.getYearnamed() - a.getYearnamed();
+  }
+}
+
+class SortByName implements Comparator<Animal> {
+  @Override
+  public int compare(Animal o1, Animal o2) {
+    return o1.getName().compareTo(o2.getName());
   }
 }
 
@@ -32,6 +42,24 @@ class SortAnimals {
 }
 
 public class Main {
+  private static List<Animal> filterAnimals(List<Animal> animals, FilterAnimals filter) {
+    List<Animal> filteredList = new ArrayList<>();
+    for (Animal a : animals) {
+      if (filter.test(a)) {
+        filteredList.add(a);
+      }
+    }
+    return filteredList;
+  }
+
+  private static void printAnimals(String title, List<Animal> animals) {
+    System.out.println(title + "\n----------");
+    for (Animal a : animals) {
+      System.out.println(a);
+    }
+    System.out.println("----------\n");
+  }
+
   private static void workWithData() {
     List<Animal> animals = new ArrayList<>();
 
@@ -56,8 +84,18 @@ public class Main {
     animals.add(new Fish("Catfish", 1817));
     animals.add(new Fish("Perch", 1758));
 
+    // Sort by Year named - descending
     List<Animal> sortedByYear = new SortAnimals(new SortByYear()).sort(animals);
-    System.out.println(sortedByYear);
+    printAnimals("Sorted by year", sortedByYear);
+
+    List<Animal> sortedByName = new SortAnimals(new SortByName()).sort(animals);
+    printAnimals("Sorted by name", sortedByName);
+
+    List<Animal> breatheWithLungs = filterAnimals(animals, a -> a.breathe() == "lungs");
+    printAnimals("Filtered by breathe with lungs", breatheWithLungs);
+
+    List<Animal> layEggsAndBreatheWithLungs = filterAnimals(animals, a -> a.breathe() == "lungs" && a.reproduce() == "eggs");
+    printAnimals("Filtered by breathe with lungs and lays eggs", layEggsAndBreatheWithLungs);
   }
 
   public static void main(String[] args) {
