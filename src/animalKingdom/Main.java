@@ -2,52 +2,9 @@ package animalKingdom;
 
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-
-class SortByYear implements Comparator<Animal> {
-  public int compare(Animal a, Animal b) {
-    return b.getYearnamed() - a.getYearnamed();
-  }
-}
-
-class SortByName implements Comparator<Animal> {
-  @Override
-  public int compare(Animal o1, Animal o2) {
-    return o1.getName().compareTo(o2.getName());
-  }
-}
-
-class SortAnimals {
-  private Comparator<Animal> comparator;
-
-  public SortAnimals(Comparator<Animal> comparator) {
-    this.comparator = comparator;
-  }
-
-  public List<Animal> sort(List<Animal> animals) {
-    ArrayList<Animal> copy = new ArrayList<>();
-    animals.forEach((a) -> {
-      copy.add(a);
-    });
-
-    Collections.sort(copy, this.comparator);
-
-    return copy;
-  }
-}
 
 public class Main {
-
-  private static void printAnimals(String title, List<Animal> animals) {
-    System.out.println(title + "\n----------");
-    for (Animal a : animals) {
-      System.out.println(a);
-    }
-    System.out.println("----------\n");
-  }
-
-  private static void workWithData() {
+  private static List<Animal> initAnimals() {
     List<Animal> animals = new ArrayList<>();
 
     // Create mammals
@@ -71,20 +28,62 @@ public class Main {
     animals.add(new Fish("Catfish", 1817));
     animals.add(new Fish("Perch", 1758));
 
-    // Sort by Year named - descending
-    // List<Animal> sortedByYear = new SortAnimals(new SortByYear()).sort(animals);
-    // printAnimals("Sorted by year", sortedByYear);
-    List<Animal> sortedByYear = AnimalUtils.sort(animals, new SortByYear());
-    printAnimals("Sorted by year", sortedByYear);
+    return animals;
+  }
 
-    List<Animal> sortedByName = new SortAnimals(new SortByName()).sort(animals);
-    printAnimals("Sorted by name", sortedByName);
+  private static void workWithData() {
+    List<Animal> animals = initAnimals();    
 
-    List<Animal> breatheWithLungs = AnimalUtils.filter(animals, a -> a.breathe() == "lungs");
-    printAnimals("Filtered by breathe with lungs", breatheWithLungs);
+    AnimalUtils.print(
+      "Sorted by year", 
+      AnimalUtils.sort(
+        animals, 
+        (a, b) -> b.getYearnamed() - a.getYearnamed()
+      )
+    );
+    
+    AnimalUtils.print(
+      "Sorted by name", 
+      AnimalUtils.sort(
+        animals, 
+        (a, b) -> a.getName().compareTo(b.getName())
+      )
+    );
+    
+    AnimalUtils.print(
+      "Filtered by breathe with lungs", 
+      AnimalUtils.filter(
+        animals, 
+        a -> a.breathe() == "lungs"
+      )
+    );
 
-    List<Animal> layEggsAndBreatheWithLungs = AnimalUtils.filter(animals, a -> a.breathe() == "lungs" && a.reproduce() == "eggs");
-    printAnimals("Filtered by breathe with lungs and lays eggs", layEggsAndBreatheWithLungs);
+    AnimalUtils.print(
+      "Filtered by breathe with lungs and lays eggs", 
+      AnimalUtils.filter(
+        animals, 
+        a -> a.breathe() == "lungs" && a.reproduce() == "eggs"
+      )
+    );
+
+    AnimalUtils.print(
+      "List alphabetically named in 1758", 
+      AnimalUtils.sort(
+        AnimalUtils.filter(animals, a -> a.getYearnamed() == 1758), 
+        (a, b) -> a.getName().compareTo(b.getName())
+      )
+    );
+
+    AnimalUtils.print(
+      "List mammals aphabetically", 
+      AnimalUtils.sort(
+        AnimalUtils.filter(
+          animals, 
+          a -> Mammal.isMammal(a)
+        ),
+        (a, b) -> a.getName().compareTo(b.getName())
+      )
+    );
   }
 
   public static void main(String[] args) {

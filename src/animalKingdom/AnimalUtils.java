@@ -35,4 +35,14 @@ public class AnimalUtils {
 
     return sorted;
   }
+
+  public static void print(String title, List<Animal> animals) {
+    System.out.println(title + "\n----------");
+    for (Animal a : animals) {
+      System.out.println(a);
+    }
+    System.out.println("----------\n");
+  }
+
+  
 }

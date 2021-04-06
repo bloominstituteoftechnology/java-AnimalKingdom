@@ -1,6 +1,10 @@
 package animalKingdom;
 
 public class Mammal extends Animal {
+  private static String reproductionType = "live birth";
+  private static String moveType = "walking";
+  private static String breathingType = "lungs";
+
   public Mammal(String name, int yearnamed) {
     this.id = maxid;
     maxid++;
@@ -11,16 +15,22 @@ public class Mammal extends Animal {
 
   @Override
   public String reproduce() {
-    return "live birth";
+    return Mammal.reproductionType;
   }
 
   @Override
   public String move() {
-    return "waliking";
+    return Mammal.moveType;
   }
 
   @Override
   public String breathe() {
-    return "lungs";
+    return Mammal.breathingType;
+  }
+
+  public static boolean isMammal(Animal animal) {
+    return animal.reproduce() == Mammal.reproductionType
+      && animal.move() == Mammal.moveType
+      && animal.breathe() == Mammal.breathingType;
   }
 }
