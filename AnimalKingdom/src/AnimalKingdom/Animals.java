@@ -1,10 +1,10 @@
 package AnimalKingdom;
 
 public abstract class Animals{
-    private static int maxId = 1;
-    private int id;
-    private String name;
-    private int yearNamed
+    protected static int maxId = 1;
+    protected int id;
+    protected String name;
+    protected int yearNamed
 
     public Animals(String name, int yearNamed){
         id = maxId;
@@ -35,13 +35,19 @@ public abstract class Animals{
     }
 
     public void move(String moving){
+        moving = 'moving';
         System.out.println(moving);
     }
 
     public void breathe(String breathing){
+        breathing = 'breathing';
         System.out.println(breathing);
     }
     public void reproduce(String reproducing){
         System.out.println(reproducing);
+    }
+    @Override
+    public String toString() {
+        return ("id="+id +", name="+ name +", yearNamed="+yearNamed);
     }
 }
