@@ -5,10 +5,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-interface FilterAnimals {
-  boolean test(Animal animal);
-}
-
 class SortByYear implements Comparator<Animal> {
   public int compare(Animal a, Animal b) {
     return b.getYearnamed() - a.getYearnamed();
@@ -42,15 +38,6 @@ class SortAnimals {
 }
 
 public class Main {
-  private static List<Animal> filterAnimals(List<Animal> animals, FilterAnimals filter) {
-    List<Animal> filteredList = new ArrayList<>();
-    for (Animal a : animals) {
-      if (filter.test(a)) {
-        filteredList.add(a);
-      }
-    }
-    return filteredList;
-  }
 
   private static void printAnimals(String title, List<Animal> animals) {
     System.out.println(title + "\n----------");
@@ -91,10 +78,10 @@ public class Main {
     List<Animal> sortedByName = new SortAnimals(new SortByName()).sort(animals);
     printAnimals("Sorted by name", sortedByName);
 
-    List<Animal> breatheWithLungs = filterAnimals(animals, a -> a.breathe() == "lungs");
+    List<Animal> breatheWithLungs = AnimalUtils.filter(animals, a -> a.breathe() == "lungs");
     printAnimals("Filtered by breathe with lungs", breatheWithLungs);
 
-    List<Animal> layEggsAndBreatheWithLungs = filterAnimals(animals, a -> a.breathe() == "lungs" && a.reproduce() == "eggs");
+    List<Animal> layEggsAndBreatheWithLungs = AnimalUtils.filter(animals, a -> a.breathe() == "lungs" && a.reproduce() == "eggs");
     printAnimals("Filtered by breathe with lungs and lays eggs", layEggsAndBreatheWithLungs);
   }
 
