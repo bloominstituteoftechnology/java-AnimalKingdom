@@ -65,4 +65,10 @@ abstract class Animal{
         System.out.println("Ohm nom nom!");
     }
 
+    @Override
+    public String toString()
+    {
+        return "Animals{id=" + this.id + ", name='" + this.name + "', yearNamed=" + this.yearNamed + "}";
+    }
+
 }
