@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Main 
 {
-    // public static List<Animal> FilteredList = new ArrayList<>();
+
 
     private static List<Animal> filteredAnimal(List<Animal> theList, CheckAnimal tester)
     {
@@ -39,7 +39,7 @@ public class Main
         animalList.add(new Fish("Salmon", 1758));
         animalList.add(new Fish("Catfish", 1817));
         animalList.add(new Fish("Perch", 1758));
-        // System.out.println(animalList);
+
 
         System.out.println("\n*** sort by Year Named");
         animalList.sort((a1, a2) -> a2.getYearNamed() - a1.getYearNamed());
@@ -50,6 +50,8 @@ public class Main
         System.out.println("\n*** sort by Move");
         animalList.sort((a1, a2) -> a1.getMove().compareToIgnoreCase(a2.getMove()));
         animalList.forEach((a) -> System.out.println(a));
+
+        //Filtered Lists
         List<Animal> filteredList = new ArrayList<>();
         filteredList = filteredAnimal(animalList, (a) -> a.getBreath() == "with lungs");
         System.out.println("\n*** sort by Lungs");
@@ -63,6 +65,9 @@ public class Main
         System.out.println("\n*** List alphabetically only those animals that were named in 1758 ");
         animalList.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
         filteredList = filteredAnimal(animalList, (a) -> a.getYearNamed() == 1758 );
+        filteredList.forEach((a) -> System.out.println(a));
+        System.out.println("\n*** *** For the list of animals, list alphabetically those animals that are mammals ***");
+        filteredList = filteredAnimal(animalList, (a) -> a.getClass() == Mammals.class);
         filteredList.forEach((a) -> System.out.println(a));
     }
 }
