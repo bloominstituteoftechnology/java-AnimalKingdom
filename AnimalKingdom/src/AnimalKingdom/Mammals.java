@@ -1,24 +1,8 @@
 package AnimalKingdom;
 
 public class Mammals extends Animals{
-    public Mammals(String name, String yearName) {
-        super(name, yearName);
-    }
-    @Override
-    public String getName(){
-        return name;
-    }
-
-    @Override
-    public int getYearName(){
-        return yearName;
-    }
-    public void setName(String name){
-        this.name = name;
-    }
-
-    public void setYearName(Int yearName){
-        this.yearName = yearName;
+    public Mammals(String name, int yearNamed) {
+        super(name, yearNamed);
     }
 
     @Override
@@ -35,10 +19,6 @@ public class Mammals extends Animals{
     public void reproduce(String reproducing){
         reproducing = "live births";
         System.out.println(reproducing);
-    }
-    @Override
-    public String toString() {
-        return (name="+ name +", yearNamed="+yearNamed);
     }
     
 }

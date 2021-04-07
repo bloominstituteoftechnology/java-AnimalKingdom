@@ -1,17 +1,18 @@
 package AnimalKingdom;
 
 public abstract class Animals{
-    protected static int maxId = 1;
+    public static int maxId = 1;
     protected int id;
     protected String name;
-    protected int yearNamed
+    protected int yearNamed;
 
-    public Animals(String name, int yearNamed){
+    public Animals(String name, int yearNamed) {
         id = maxId;
         maxId++;
         this.name = name;
         this.yearNamed = yearNamed;
     }
+
     public int getId() {
         return id;
     }
@@ -19,7 +20,7 @@ public abstract class Animals{
         return name;
     }
     public int getYearNamed(){
-        return year;
+        return yearNamed;
     }
 
     public void setId(int id) {
@@ -35,12 +36,12 @@ public abstract class Animals{
     }
 
     public void move(String moving){
-        moving = 'moving';
+        moving = "moving";
         System.out.println(moving);
     }
 
     public void breathe(String breathing){
-        breathing = 'breathing';
+        breathing = "breathing";
         System.out.println(breathing);
     }
     public void reproduce(String reproducing){
@@ -48,6 +49,6 @@ public abstract class Animals{
     }
     @Override
     public String toString() {
-        return ("id="+id +", name="+ name +", yearNamed="+yearNamed);
+        return ("Animals{id=" + id + ", name=" + name + ", yearNamed=" + yearNamed + "},\n");
     }
 }

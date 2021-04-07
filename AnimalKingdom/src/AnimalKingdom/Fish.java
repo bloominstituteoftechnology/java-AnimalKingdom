@@ -1,24 +1,8 @@
 package AnimalKingdom;
 
 public class Fish extends Animals{
-    public Fish(String name, String yearName) {
-        super(name, yearName);
-    }
-    @Override
-    public String getName(){
-        return name;
-    }
-
-    @Override
-    public int getYearName(){
-        return yearName;
-    }
-    public void setName(String name){
-        this.name = name;
-    }
-
-    public void setYearName(Int yearName){
-        this.yearName = yearName;
+    public Fish( String name, int yearNamed) {
+        super(name, yearNamed);
     }
 
     @Override
@@ -36,8 +20,5 @@ public class Fish extends Animals{
         reproducing = "eggs";
         System.out.println(reproducing);
     }
-    @Override
-    public String toString() {
-        return (name="+ name +", yearNamed="+yearNamed);
-    }
+
 }
