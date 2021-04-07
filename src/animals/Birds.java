@@ -7,7 +7,7 @@ public class Birds extends Animal {
             yearNamed,
             "flying",
             "with lungs",
-            "in eggs yo!"
+            "via eggs"
         );
     }
 }
