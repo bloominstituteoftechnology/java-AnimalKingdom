@@ -1,6 +1,9 @@
 package animalKingdomApp;
 
 import java.util.List;
+
+import javax.print.event.PrintEvent;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -27,6 +30,16 @@ public class Main {
       
       System.out.println("List all the animals in descending order by year named");
       System.out.println(animalList);
+
+      System.out.println("List all the animals alphabetically");
+      animalList.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+      System.out.println(animalList);
+
+      System.out.println("List all the animals order by how they move");
+      animalList.sort((a1, a2) -> a1.move().compareToIgnoreCase(a2.move()));
+      System.out.println(animalList);
+
+      
 
       
 
