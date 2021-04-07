@@ -35,16 +35,18 @@ public abstract class Animals{
         this.yearNamed = yearNamed;
     }
 
-    public void move(String moving){
-        moving = "moving";
+    public void move(){
+        String moving = "moving";
         System.out.println(moving);
     }
 
-    public void breathe(String breathing){
-        breathing = "breathing";
+    public void breathe(){
+        String breathing = "breathing";
         System.out.println(breathing);
     }
-    public void reproduce(String reproducing){
+
+    public void reproduce() {
+        String reproducing = "eggs";
         System.out.println(reproducing);
     }
     @Override

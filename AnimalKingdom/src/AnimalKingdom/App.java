@@ -3,8 +3,11 @@ package AnimalKingdom;
 import java.util.*;
 
 public class App {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         List<Animals> animals = new ArrayList<Animals>();
+        List<Animals> animals2 = new ArrayList<Animals>();
+        List<Animals> animals3 = new ArrayList<Animals>();
+
         //Instantiate Mammals
         Mammals panda = new Mammals("Panda", 1869);
         Mammals zebra = new Mammals("Zebra", 1778);
@@ -39,11 +42,24 @@ public class App {
         animals.add(salmon);
         animals.add(catfish);
         animals.add(perch);
-        //Print List
-        // System.out.println(animals);
-
-        Collections.sort(animals, Collections.reverseOrder());
+        
+        //*** List all the animals in descending order by year named ***
+        Comparator<Animals> reverseOrderbyYear = (Animals o1, Animals o2) -> Integer.compare(o1.getYearNamed(), (o2.getYearNamed()));
+        Collections.sort(animals, reverseOrderbyYear.reversed());
+        System.out.println(animals);
+        
+        // *** List all the animals alphabetically ***
+        Comparator<Animals> alphabetize = (Animals o1, Animals o2) -> (o1.getName().compareTo(o2.getName()));
+        Collections.sort(animals, alphabetize);
         System.out.println(animals);
 
+        //*** List all the animals order by how they move ***
+        // Comparator<Animals> orderByMovement = (Animals o1, Animals o2) -> (o1.move().compareTo(o2.move()));
+        // Collections.sort(animals, orderByMovement);
+        // System.out.println(animals);
+
+        pigeon.move();
+
     }
+
 }

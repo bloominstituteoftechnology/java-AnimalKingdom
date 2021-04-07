@@ -6,18 +6,18 @@ public class Mammals extends Animals{
     }
 
     @Override
-    public void move(String moving){
-        moving = "walking";
-    System.out.println(moving);
+    public void move(){
+        String moving = "walking";
+        System.out.println(moving);
     }
     @Override
-    public void breathe(String breathing){
-        breathing = "lungs";
-    System.out.println(breathing);
+    public void breathe(){
+        String breathing = "lungs";
+        System.out.println(breathing);
     }
     @Override
-    public void reproduce(String reproducing){
-        reproducing = "live births";
+    public void reproduce(){
+        String reproducing = "live births";
         System.out.println(reproducing);
     }
     
