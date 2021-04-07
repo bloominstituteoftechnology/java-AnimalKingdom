@@ -14,24 +14,24 @@ Using a combination of abstract classes, an interface, sorting, and lambda expre
 
 ## Instructions and Completion Requirements
 
-* [ ] Please fork and clone this repository. This repository does not have a starter project, so create one inside of the cloned repository folder. Regularly commit and push your code as appropriate.
-* [ ] Create an abstract class for animals
-  * [ ] All animals consume food the same way
-  * [ ] Each animal is assigned a unique number as an id, a name, and a year named, regardless of classification.
+* [x] Please fork and clone this repository. This repository does not have a starter project, so create one inside of the cloned repository folder. Regularly commit and push your code as appropriate.
+* [x] Create an abstract class for animals
+  * [x] All animals consume food the same way
+  * [x] Each animal is assigned a unique number as an id, a name, and a year named, regardless of classification.
 
-* [ ] Methods will return a string saying how that animal implements the action
-  * [ ] All animals can move, breathe, reproduce. How they do that varies by animal type. This variation means that the string that gets returned by a method is different for each animal type (mammals, birds, fish).
+* [x] Methods will return a string saying how that animal implements the action
+  * [x] All animals can move, breathe, reproduce. How they do that varies by animal type. This variation means that the string that gets returned by a method is different for each animal type (mammals, birds, fish).
 
-* [ ] Create classes for mammals, birds, fish
-  * [ ] Mammals **move** by walking, **breath** with lungs, and **reproduce** via live births
-  * [ ] Birds **move** by flying, **breath** with lungs, and **reproduce** via eggs
-  * [ ] Fish **move** by swimming, **breath** with gills, and **reproduce** via eggs
+* [x] Create classes for mammals, birds, fish
+  * [x] Mammals **move** by walking, **breath** with lungs, and **reproduce** via live births
+  * [x] Birds **move** by flying, **breath** with lungs, and **reproduce** via eggs
+  * [x] Fish **move** by swimming, **breath** with gills, and **reproduce** via eggs
 
 Hint: think about abstract classes and creating an ArrayList using an abstract class type.
 
 Create a collection for the animals using the following data. You will have one collection of animals; this collection will contain mammals, birds, and fish.
 
-* [ ] **Mammals:**
+* [x] **Mammals:**
 
     | Name      | Year Named |
     |-----------|-------|
@@ -43,7 +43,7 @@ Create a collection for the animals using the following data. You will have one 
     | Raccoon   | 1758  |
     | Bigfoot   | 2021  |
 
-* [ ] **Birds:**
+* [x] **Birds:**
 
     | Name      | Year Named |
     |-----------|------|
@@ -53,7 +53,7 @@ Create a collection for the animals using the following data. You will have one 
     | Parrot    | 1824 |
     | Swan      | 1758 |
 
-* [ ] **Fish:**
+* [x] **Fish:**
 
     | Name      | Year Named |
     |-----------|------|
