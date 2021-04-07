@@ -3,7 +3,7 @@ package AnimalKingdom;
 import java.util.*;
 
 public class App {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         List<Animals> animals = new ArrayList<Animals>();
         List<Animals> animals2 = new ArrayList<Animals>();
         List<Animals> animals3 = new ArrayList<Animals>();
@@ -42,24 +42,35 @@ public class App {
         animals.add(salmon);
         animals.add(catfish);
         animals.add(perch);
-        
+
         //*** List all the animals in descending order by year named ***
-        Comparator<Animals> reverseOrderbyYear = (Animals o1, Animals o2) -> Integer.compare(o1.getYearNamed(), (o2.getYearNamed()));
+        Comparator<Animals> reverseOrderbyYear = (Animals o1, Animals o2) -> Integer.compare(o1.getYearNamed(),
+                (o2.getYearNamed()));
         Collections.sort(animals, reverseOrderbyYear.reversed());
+        System.out.println("REVERSE ORDER BY YEAR");
         System.out.println(animals);
-        
+
         // *** List all the animals alphabetically ***
         Comparator<Animals> alphabetize = (Animals o1, Animals o2) -> (o1.getName().compareTo(o2.getName()));
         Collections.sort(animals, alphabetize);
+        System.out.println("ALPHABETICAL ORDER");
         System.out.println(animals);
 
         //*** List all the animals order by how they move ***
-        // Comparator<Animals> orderByMovement = (Animals o1, Animals o2) -> (o1.move().compareTo(o2.move()));
-        // Collections.sort(animals, orderByMovement);
-        // System.out.println(animals);
+        Collections.sort(animals, new Comparator<Animals>(){     
+            @Override
+            public int compare(Animals o3, Animals o4) {
+                return (int)(o3.move("m").compareTo(o4.move("m")));
+            }
+        });
 
-        pigeon.move();
+        Collections.sort(animals, (o3, o4) -> (o3.move("m").compareTo(o4.move("m"))));
+        System.out.println("ORDERED BY MOVEMENT TYPE");
+        System.out.println(animals);
+ 
+    
 
+        
     }
 
 }

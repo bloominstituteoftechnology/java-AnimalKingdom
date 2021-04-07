@@ -6,9 +6,8 @@ public class Fish extends Animals{
     }
 
     @Override
-    public void move(){
-        String moving = "swimming";
-        System.out.println(moving);
+    public String move(String moving) {
+        return "swimming";
     }
     @Override
     public void breathe(){

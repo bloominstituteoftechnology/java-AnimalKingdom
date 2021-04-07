@@ -35,20 +35,12 @@ public abstract class Animals{
         this.yearNamed = yearNamed;
     }
 
-    public void move(){
-        String moving = "moving";
-        System.out.println(moving);
-    }
+    public abstract  String move(String moving);
 
-    public void breathe(){
-        String breathing = "breathing";
-        System.out.println(breathing);
-    }
+    public abstract void breathe();
 
-    public void reproduce() {
-        String reproducing = "eggs";
-        System.out.println(reproducing);
-    }
+    public abstract void reproduce();
+
     @Override
     public String toString() {
         return ("Animals{id=" + id + ", name=" + name + ", yearNamed=" + yearNamed + "},\n");

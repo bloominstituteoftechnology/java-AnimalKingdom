@@ -5,9 +5,8 @@ public class Birds extends Animals {
         super(name, yearNamed);
     }
     @Override
-    public void move(){
-        String moving = "flying";
-        System.out.println(moving);
+    public String move(String moving){
+        return "flying";
     }
     @Override
     public void breathe(){
