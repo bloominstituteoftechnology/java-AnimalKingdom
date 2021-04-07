@@ -20,4 +20,9 @@ public class Mammals extends Animals{
         return "live births";
     }
     
+    @Override
+    public String type(String type) {
+        return "mammals";
+    }
+    
 }

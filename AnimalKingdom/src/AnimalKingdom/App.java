@@ -126,11 +126,30 @@ public class App {
                                     + " " + sorted.breathe("breathing") + " " + sorted.yearNamed + "\n");
                 }
 
+                //STRETCH
+                // *** For the list of animals, list alphabetically those animals that are
+                // mammals ***
+                System.out.println("\nFILTERED BY ANIMALS WHO WERE NAMED IN 1758");
+                for (Animals filtered : animals) {
+                    if (filtered.type("type") == "mammals") {
+                        animals3.add(filtered);
 
-                // System.out.print(animals2.name + " " + filtered.reproduce("reproducing") + " "
-                //         + filtered.move("moving") + " " + filtered.breathe("breathing") + " "
-                //         + filtered.yearNamed + "\n");
+                        // System.out.println(animals2);
+                    }
+                }
+                Collections.sort(animals3, new Comparator<Animals>() {
+                    @Override
+                    public int compare(Animals o5, Animals o6) {
+                        return (int) (o5.name.compareTo(o6.name));
+                    }
+                });
 
+                Collections.sort(animals3, (o5, o6) -> (o5.name.compareTo(o6.name)));
+                System.out.println("ANIMALS WHO ARE MAMMALS");
+                for (Animals sorted : animals3) {
+                    System.out.print(sorted.name + " " + sorted.reproduce("reproducing") + " " + sorted.move("moving")
+                            + " " + sorted.breathe("breathing") + " " + sorted.yearNamed + "\n");
+                }
         
     }
 

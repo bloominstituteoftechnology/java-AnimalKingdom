@@ -13,7 +13,11 @@ public class Birds extends Animals {
         return "lungs";
     }
     @Override
-    public String reproduce(String reproducing){
+    public String reproduce(String reproducing) {
         return "eggs";
+    }
+    @Override
+    public String type(String type) {
+        return "birds";
     }
 }

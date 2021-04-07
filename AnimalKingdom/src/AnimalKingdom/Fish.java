@@ -18,5 +18,10 @@ public class Fish extends Animals{
     public String reproduce(String reproducing) {
         return "eggs";
     }
+    
+    @Override
+    public String type(String type) {
+        return "fish";
+    }
 
 }

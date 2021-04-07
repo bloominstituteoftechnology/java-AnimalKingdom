@@ -40,6 +40,8 @@ public abstract class Animals{
     public abstract String breathe(String breathing);
 
     public abstract String reproduce(String reproducing);
+    
+    public abstract String type(String type);
 
     @Override
     public String toString() {
