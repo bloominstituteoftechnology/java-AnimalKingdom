@@ -8,16 +8,15 @@ public class Fish extends Animals{
     @Override
     public String move(String moving) {
         return "swimming";
-    }
+    }  
     @Override
-    public void breathe(){
-        String breathing = "gills";
-        System.out.println(breathing);
+    public String breathe(String breathing) {
+        return "gills";
     }
+
     @Override
-    public void reproduce(){
-        String reproducing = "eggs";
-        System.out.println(reproducing);
+    public String reproduce(String reproducing) {
+        return "eggs";
     }
 
 }

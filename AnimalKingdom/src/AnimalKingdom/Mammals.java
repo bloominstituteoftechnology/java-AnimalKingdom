@@ -9,15 +9,15 @@ public class Mammals extends Animals{
     public String move(String moving) {
     return "walking";
     }
+    
     @Override
-    public void breathe(){
-        String breathing = "lungs";
-        System.out.println(breathing);
+    public String breathe(String breathing) {
+        return "lungs";
     }
+
     @Override
-    public void reproduce(){
-        String reproducing = "live births";
-        System.out.println(reproducing);
+    public String reproduce(String reproducing) {
+        return "live births";
     }
     
 }

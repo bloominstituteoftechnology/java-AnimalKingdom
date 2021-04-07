@@ -9,14 +9,11 @@ public class Birds extends Animals {
         return "flying";
     }
     @Override
-    public void breathe(){
-        String breathing = "lungs";
-        System.out.println(breathing);
+    public String breathe(String breathing){
+        return "lungs";
     }
     @Override
-    public void reproduce(){
-        String reproducing = "eggs";
-        System.out.println(reproducing);
+    public String reproduce(String reproducing){
+        return "eggs";
     }
-
 }
