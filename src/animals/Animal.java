@@ -61,7 +61,6 @@ abstract class Animal{
         this.reproduce = reproduce;
     }
 
-
     public void eat(){
         System.out.println("Ohm nom nom!");
     }
