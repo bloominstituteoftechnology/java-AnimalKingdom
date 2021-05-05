@@ -18,7 +18,7 @@ public class Main
     animalList.add(new Mammals("Sloth", 1804));
     animalList.add(new Mammals("Armadillo", 1758));
     animalList.add(new Mammals("Raccoon", 1758));
-    animalList.add(new Mammals("Bigfoot"));
+    animalList.add(new Mammals("Bigfoot", 2021));
     animalList.add(new Fish("Salmon", 1758));
     animalList.add(new Fish("Catfish", 1817));
     animalList.add(new Fish("Perch", 1758));
@@ -37,9 +37,15 @@ public class Main
     //     return -1;
     //   }
     // }));
-    animalList.sort((a1, a2) -> (a2.))
+    animalList.sort((a1, a2) -> (a1.getName().compareTo(a2.getName())));
+    System.out.println(animalList);
 
     System.out.println(filterAnimals(animalList, (a) -> a.breathe == "lungs"));
+    System.out.println(filterAnimals(animalList, (a) -> a.breathe == "lungs" && a.yearNamed == 1758));
+    System.out.println(filterAnimals(animalList, (a) -> a.breathe == "lungs" && a.reproduce == "eggs" ));
+    List<Animals> filteredAnimals = filterAnimals(animalList, (a) -> a.yearNamed == 1758);
+    filteredAnimals.sort((a1, a2) -> (a1.getName().compareTo(a2.getName())));
+    System.out.println(filteredAnimals);
 
   }
 

@@ -3,13 +3,13 @@ package animalKingdom;
 public class Fish extends Animals
 {
 
-  public Fish (String name, String yearNamed)
+  public Fish (String name, int yearNamed)
   {
 
     super(name, yearNamed);
     move = "swimming";
     breathe = "gills";
-    reproduce "eggs";
+    reproduce = "eggs";
 
   }
 
@@ -26,9 +26,9 @@ public class Fish extends Animals
   }
 
   @Override
-  public String breathe()
+  public String reproduce()
   {
-    return breathe;
+    return reproduce;
   }
 
 }

@@ -17,6 +17,16 @@ public abstract class Animals
  public abstract String breathe();
  public abstract String reproduce();
 
+ public String getName()
+ {
+   return name;
+ }
+
+ public int getYearNamed()
+ {
+   return yearNamed;
+ }
+
   public String eat()
   {
     food++;
